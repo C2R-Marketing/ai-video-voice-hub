@@ -1,0 +1,2 @@
+# ads.txt — deploy to the site root (e.g. https://<new-domain>/ads.txt) before AdSense site review
+google.com, pub-5514918108951220, DIRECT, f08c47fec0942fa0

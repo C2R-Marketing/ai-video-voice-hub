@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://c2r-marketing.github.io/ai-video-voice-hub/sitemap.xml
