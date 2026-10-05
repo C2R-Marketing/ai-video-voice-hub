@@ -100,6 +100,7 @@ table.compare tbody tr:nth-child(even) { background: var(--bg-soft); }
 }
 .btn:hover { text-decoration: none; filter: brightness(1.08); }
 .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.btn-disabled { background: var(--muted); opacity: .65; cursor: not-allowed; }
 .aff-note { font-size: .82rem; color: var(--muted); }
 
 /* FAQ */

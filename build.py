@@ -44,6 +44,12 @@ def starting_price(t):
 def cta_for(name):
     """Return (url, label, note). Only verified affiliate URLs from affiliate-links.json."""
     t = TOOLS[name]
+    # Service-status overrides: confirmed-dead or unreachable domains get no
+    # outbound link at all — a dead "Visit" button is worse than no button.
+    if name == "PlayHT":
+        return (None, "PlayHT",
+                "Status uncertain — play.ht is currently unreachable and third-party reports "
+                "suggest the service was discontinued (PlayAI/Meta). Link removed until confirmed live.")
     entry = aff_links.get(name)
     if entry and entry.get("url") and entry.get("status") == "verified":
         return entry["url"], f"Try {name}", "Affiliate link — we may earn a commission."
@@ -161,6 +167,13 @@ def ul_or(items, fallback):
 def tool_card(name, rank, take):
     t = TOOLS[name]
     url, label, note = cta_for(name)
+    if url:
+        cta_button = (f'<a class="btn" href="{esc(url)}" '
+                      f'rel="{"sponsored noopener" if "affiliate" in note.lower() else "noopener"}" '
+                      f'target="_blank">{esc(label)}</a>')
+    else:
+        # No outbound link (e.g. dead domain) — show the status note instead of a button.
+        cta_button = '<span class="btn btn-disabled" aria-disabled="true">Link unavailable</span>'
     feats = ul_or((t.get("features") or [])[:6],
                   "Feature details are being re-verified against the official site.")
     pros = ul_or((t.get("strengths") or [])[:4],
@@ -194,7 +207,7 @@ Tov is filming a real walkthrough of {esc(name)}: account setup, first project, 
 {free_line}
 </div>
 <div class="cta-row">
-<a class="btn" href="{esc(url)}" rel="{"sponsored noopener" if 'affiliate' in note.lower() else "noopener"}" target="_blank">{esc(label)}</a>
+{cta_button}
 <span class="aff-note">{esc(note)}</span>
 </div>
 </section>"""
@@ -255,7 +268,7 @@ PAGES = [
   title="7 Best HeyGen Alternatives (2026) — AI Avatar Video Compared",
   meta="The 7 best HeyGen alternatives for AI avatar videos in 2026, compared on price, languages, and realism. Pricing verified against official sites.",
   h1="7 Best HeyGen Alternatives in 2026",
-  lede="HeyGen makes realistic AI avatar videos fast — but it isn't the cheapest, and its free plan is limited. These seven alternatives cover every budget and use case, with pricing verified on October 1, 2026.",
+  lede="HeyGen makes realistic AI avatar videos fast — but it isn't the cheapest, and its free plan is limited. These seven alternatives cover every budget and use case, with pricing verified on October 5, 2026.",
   intro=("I use AI avatars to make videos without sitting in front of a camera, and HeyGen is the tool most people start with. "
          "But 'most popular' doesn't mean 'best for you.' Some creators need more languages, some need a real free plan, and some just need "
          "the cheapest way to turn a script into a talking-head video. Below is every serious HeyGen alternative I could verify, "
@@ -280,24 +293,23 @@ PAGES = [
    ("Can AI avatar videos look realistic enough for YouTube?",
     "<p>Yes — current-generation avatars from HeyGen, Synthesia, and D-ID pass comfortably in talking-head formats. Disclosure: many platforms and viewers expect AI-generated content to be labeled; check YouTube's current AI-content disclosure rules.</p>"),
    ("How much does a HeyGen alternative cost?",
-    "<p>Verified starting prices range from free tiers up to enterprise plans. See the pricing box under each tool above — every figure was checked against the official site on October 1, 2026.</p>"),
+    "<p>Verified starting prices range from free tiers up to enterprise plans. See the pricing box under each tool above — every figure was checked against the official site on October 5, 2026.</p>"),
   ]),
  dict(
   slug="elevenlabs-alternatives", benchmark="ElevenLabs",
-  title="8 Best ElevenLabs Alternatives (2026) — AI Voice Compared",
-  meta="The 8 best ElevenLabs alternatives for AI voiceovers in 2026: Murf, PlayHT, Speechify and more, compared on price and voice quality. Pricing verified.",
-  h1="8 Best ElevenLabs Alternatives in 2026",
-  lede="ElevenLabs sets the bar for realistic AI voices — but per-character pricing adds up, and its free tier is small. These eight alternatives compete on price, languages, and licensing, verified October 1, 2026.",
+  title="7 Best ElevenLabs Alternatives (2026) — AI Voice Compared",
+  meta="The 7 best ElevenLabs alternatives for AI voiceovers in 2026: Murf, Speechify, Lovo and more, compared on price and voice quality. Pricing verified.",
+  h1="7 Best ElevenLabs Alternatives in 2026",
+  lede="ElevenLabs sets the bar for realistic AI voices — but per-character pricing adds up, and its free tier is small. These seven alternatives compete on price, languages, and licensing, verified October 5, 2026.",
   intro=("AI voiceover is the backbone of faceless YouTube channels, audiobooks, and course narration. ElevenLabs earned its reputation with "
          "remarkably human voices, but its pricing model charges by character — long scripts get expensive. The alternatives below include "
          "subscription models with generous minutes, stronger commercial licenses, and better free tiers. Every price was verified against the official site."),
-  tools=["ElevenLabs","Murf","PlayHT","Speechify","Resemble AI","WellSaid Labs","Lovo","Podcastle","Listnr"],
+  tools=["ElevenLabs","Murf","PlayHT","Speechify","WellSaid Labs","Lovo","Podcastle","Listnr"],
   takes={
    "ElevenLabs": "The benchmark: the most natural-sounding voices and the best voice cloning, but character-based pricing punishes long scripts.",
    "Murf": "The studio pick — a polished voiceover workflow with team collaboration, aimed squarely at professional video producers.",
-   "PlayHT": "A strong all-rounder with competitive pricing and a large voice library; worth a head-to-head listen against ElevenLabs.",
+   "PlayHT": "Status uncertain as of October 2026 — play.ht is currently unreachable and third-party reports suggest the service was discontinued. Listed for completeness; do not rely on old pricing.",
    "Speechify": "Famous for text-to-speech reading, with a voiceover studio for creators; a good fit if you already live in their ecosystem.",
-   "Resemble AI": "The customization king — deep voice cloning controls for developers and studios that need exact voice matches.",
    "WellSaid Labs": "Enterprise-grade narration voices with a focus on consistent, broadcast-quality output for training and corporate content.",
    "Lovo": "Genny pairs AI voices with AI art and video; a creative-suite play for YouTubers who want voice plus visuals in one subscription.",
    "Podcastle": "Built for podcasters — recording, editing, and AI voices in one place, so your narration never leaves the studio.",
@@ -307,7 +319,7 @@ PAGES = [
    ("What is the cheapest ElevenLabs alternative?",
     "<p>Listnr and Podcastle compete on the low end with generous entry tiers. Compare the per-month character or minute allowances in the pricing boxes above — the cheapest sticker price isn't always the cheapest per finished minute of audio.</p>"),
    ("Which AI voice sounds most human?",
-    "<p>ElevenLabs still leads in blind-listening reputation, with PlayHT and Murf close behind. Voice quality is subjective — every tool above offers free samples, so listen before you pay.</p>"),
+    "<p>ElevenLabs still leads in blind-listening reputation, with Murf close behind. Voice quality is subjective — every tool above offers free samples, so listen before you pay.</p>"),
    ("Can I use AI voices for commercial YouTube videos?",
     "<p>Yes, on paid plans — but license terms differ by tool. Verify commercial-use rights on the official terms page of whichever tool you choose; free tiers often restrict commercial use.</p>"),
    ("How is AI voice priced — per character or per minute?",
@@ -318,7 +330,7 @@ PAGES = [
   title="7 Best Synthesia Alternatives (2026) — AI Presenters Compared",
   meta="The 7 best Synthesia alternatives for AI presenter videos in 2026, compared on price, languages, and avatar realism. Pricing verified.",
   h1="7 Best Synthesia Alternatives in 2026",
-  lede="Synthesia dominates corporate AI video — but corporate pricing follows. These seven alternatives deliver AI presenters for creators, educators, and smaller teams, verified October 1, 2026.",
+  lede="Synthesia dominates corporate AI video — but corporate pricing follows. These seven alternatives deliver AI presenters for creators, educators, and smaller teams, verified October 5, 2026.",
   intro=("Synthesia built its name on enterprise training videos: compliant, multilingual, professional. If you're a solo creator or small team, "
          "you're paying for enterprise features you may never touch. The alternatives below range from creator-priced to API-first, and each one "
          "was verified against its official pricing page."),
@@ -332,7 +344,7 @@ PAGES = [
    "DeepBrain AI": "A premium realism option aimed at broadcast and corporate communications teams.",
    "Hour One": "Virtual presenters tuned for e-learning and customer education use cases.",
    "Tavus": "One-to-one personalized video at scale — a different category, but the most interesting alternative if your goal is outreach.",
-   "Synthesys": "A full AI media suite (video, voice, avatars) for creators who want one subscription covering every asset.",
+   "Synthesys": "Pivoted in 2026 to an AI video agent for ad creation (UGC ads, commercials, faceless stories) — no longer the classic avatar-presenter tool. Evaluate it as ad-creative software; pricing verified on the official site.",
   },
   faqs=[
    ("Is there a free Synthesia alternative?",
@@ -347,7 +359,7 @@ PAGES = [
   title="8 Best AI Video Generators for YouTubers (2026) — Tested & Priced",
   meta="The 8 best AI video generators for YouTube in 2026: Pictory, InVideo, Fliki and more, compared on price, free plans, and workflow. Pricing verified.",
   h1="8 Best AI Video Generators for YouTubers in 2026",
-  lede="Faceless YouTube channels run on AI video generators. These eight tools turn scripts into publish-ready videos — compared on price, free plans, and the workflow details that matter, verified October 1, 2026.",
+  lede="Faceless YouTube channels run on AI video generators. These eight tools turn scripts into publish-ready videos — compared on price, free plans, and the workflow details that matter, verified October 5, 2026.",
   intro=("The 'faceless channel' playbook is simple: script, voiceover, stock footage, captions, publish. The tools below automate different slices of that pipeline. "
          "Pictory and InVideo cover script-to-video; Fliki bundles voiceover in; OpusClip repurposes your long videos into Shorts. Pick based on which step eats most of your time — "
          "and check each pricing box, because 'unlimited' rarely means what you hope."),
@@ -377,15 +389,18 @@ PAGES = [
   title="ElevenLabs vs Murf vs PlayHT (2026) — AI Voice Head-to-Head",
   meta="ElevenLabs vs Murf vs PlayHT compared head-to-head in 2026: voice quality, pricing, languages, and commercial licenses. Pricing verified.",
   h1="ElevenLabs vs Murf vs PlayHT: Head-to-Head in 2026",
-  lede="The three biggest names in AI voiceover, compared on the four things that decide a purchase: how the voices sound, what it costs per finished minute, language coverage, and license terms. Verified October 1, 2026.",
-  intro=("If you've narrowed your AI voice search to these three, you're choosing between philosophies. ElevenLabs bets on raw voice realism and charges per character. "
-         "Murf bets on a professional voiceover studio workflow with collaboration. PlayHT bets on breadth — a huge voice library at competitive prices. "
+  lede="ElevenLabs vs Murf vs PlayHT compared head-to-head — with an important status note on PlayHT below. Verified October 5, 2026.",
+  intro=("⚠️ <strong>Status note (October 5, 2026):</strong> play.ht is currently unreachable, and third-party reports suggest the PlayHT service was "
+         "discontinued following the PlayAI/Meta acquisition. We have removed the outbound PlayHT link until the service's status is confirmed — "
+         "treat any PlayHT pricing you find online as stale. The ElevenLabs vs Murf comparison below is unaffected.<br><br>"
+         "If you've narrowed your AI voice search to these names, you're choosing between philosophies. ElevenLabs bets on raw voice realism and charges per character. "
+         "Murf bets on a professional voiceover studio workflow with collaboration. PlayHT bet on breadth — a huge voice library at competitive prices. "
          "Below is the honest breakdown, then a per-tool deep dive so you can hear the differences yourself with each tool's free samples."),
   tools=["ElevenLabs","Murf","PlayHT"],
   takes={
    "ElevenLabs": "Wins on pure realism and voice cloning quality. Loses on pricing for long scripts — character-based billing adds up fast at audiobook or course scale.",
    "Murf": "Wins on workflow — the closest thing to a real recording studio, with team features video producers actually use. Loses on per-minute value for solo creators doing high volume.",
-   "PlayHT": "Wins on value breadth — big library, competitive plans, strong API. The pragmatic middle ground if ElevenLabs feels pricey and Murf feels corporate.",
+   "PlayHT": "Status uncertain as of October 2026 — play.ht is unreachable and the service may be discontinued. Previously won on value breadth; do not make a buying decision on old pricing.",
   },
   faqs=[
    ("Which sounds most human: ElevenLabs, Murf, or PlayHT?",
@@ -400,7 +415,7 @@ PAGES = [
   title="8 Best Descript Alternatives (2026) — Text-Based Editing Compared",
   meta="The 8 best Descript alternatives for text-based video and podcast editing in 2026, compared on price and features. Pricing verified.",
   h1="8 Best Descript Alternatives in 2026",
-  lede="Descript changed editing by making video editable like a document — but it's not the only text-based editor, and not the cheapest. Eight verified alternatives, October 1, 2026.",
+  lede="Descript changed editing by making video editable like a document — but it's not the only text-based editor, and not the cheapest. Eight verified alternatives, October 5, 2026.",
   intro=("Descript's killer idea: edit the transcript, and the video follows. Overdub voice cloning, filler-word removal, and Studio Sound made it a podcasting staple. "
          "But creators leave Descript over price, rendering queues, or wanting a simpler tool. The alternatives below split into two camps: full editors with transcription (Riverside, VEED, Kapwing) "
          "and lighter AI editing assistants (Gling, Wisecut, Timebolt) that clean up your footage fast."),
@@ -420,7 +435,7 @@ PAGES = [
    ("What is the best free Descript alternative?",
     "<p>Kapwing and VEED have the most generous free tiers among full editors; Gling and Timebolt offer free trials of their cleanup tools. Free plans are watermarked or time-limited — fine for evaluation.</p>"),
    ("Which alternative has voice cloning like Overdub?",
-    "<p>Descript's Overdub remains the most integrated cloning-for-editing feature. Podcastle and Resemble AI offer strong standalone cloning if that's your priority.</p>"),
+    "<p>Descript's Overdub remains the most integrated cloning-for-editing feature. Podcastle offers strong standalone voice cloning if that's your priority.</p>"),
    ("Is text-based editing actually faster?",
     "<p>For talking-head and podcast content, yes — cutting filler words from a transcript beats scrubbing a timeline. For cinematic or heavily visual editing, traditional timelines still win.</p>"),
   ]),
@@ -429,7 +444,7 @@ PAGES = [
   title="6 Best Submagic Alternatives (2026) — AI Captions Compared",
   meta="The 6 best Submagic alternatives for animated AI captions in 2026: Captions, OpusClip, Vizard and more. Pricing verified.",
   h1="6 Best Submagic Alternatives in 2026",
-  lede="Submagic made word-by-word animated captions the default look of short-form video — but subscriptions stack up. Six verified alternatives that caption just as well, October 1, 2026.",
+  lede="Submagic made word-by-word animated captions the default look of short-form video — but subscriptions stack up. Six verified alternatives that caption just as well, October 5, 2026.",
   intro=("Captions are no longer optional: most short-form video is watched muted, and animated captions measurably lift retention. Submagic nailed the workflow — "
          "upload, auto-caption, pick a style, export. The alternatives below either match that workflow cheaper (Captions, Vizard), bundle it with clip repurposing (OpusClip), "
          "or include it inside a full editor so you drop a subscription (VEED, Kapwing, Flixier)."),
@@ -456,7 +471,7 @@ PAGES = [
   title="7 Best Pictory Alternatives (2026) — Script-to-Video Compared",
   meta="The 7 best Pictory alternatives for script-to-video in 2026: InVideo, Fliki, Lumen5 and more. Pricing verified.",
   h1="7 Best Pictory Alternatives in 2026",
-  lede="Pictory turns scripts into videos with stock footage and AI voices — ideal for faceless channels. Seven verified alternatives for every budget, October 1, 2026.",
+  lede="Pictory turns scripts into videos with stock footage and AI voices — ideal for faceless channels. Seven verified alternatives for every budget, October 5, 2026.",
   intro=("Pictory's formula — script in, captioned stock-footage video out — powers a huge share of faceless YouTube. But its per-video pricing tiers push heavy publishers toward alternatives. "
          "InVideo and Fliki are the direct rivals; Lumen5 and Steve AI serve repurposers; VEED and FlexClip are the editor's answer. Every price below was verified on the official site."),
   tools=["Pictory","InVideo","Fliki","Lumen5","VEED","Steve AI","FlexClip","Wisecut"],
@@ -483,7 +498,7 @@ PAGES = [
   title="8 Best AI Avatars for Course Creators (2026) — Teach Without Filming",
   meta="The 8 best AI avatar tools for course creators in 2026: turn scripts into instructor-led lessons without filming. Pricing verified.",
   h1="8 Best AI Avatars for Course Creators in 2026",
-  lede="Course creators are replacing filming days with AI avatars: write the lesson script, generate the instructor video, update any lesson in minutes. Eight verified options, October 1, 2026.",
+  lede="Course creators are replacing filming days with AI avatars: write the lesson script, generate the instructor video, update any lesson in minutes. Eight verified options, October 5, 2026.",
   intro=("Reshooting a course module because one fact changed is the worst part of course creation. AI avatars fix it: edit the script, regenerate the video, done. "
          "The tools below are ranked for course use specifically — lesson-length rendering, consistent instructor identity across modules, and SCORM/LMS-friendly exports where offered. "
          "Pair any of them with a course platform (we hold a Teachable affiliate relationship) and you have a complete no-camera course pipeline."),
@@ -511,7 +526,7 @@ PAGES = [
   title="7 Best Vidnoz Alternatives (2026) — Free & Budget AI Video",
   meta="The 7 best Vidnoz alternatives for free and budget AI video in 2026. Compare free tiers, watermarks, and upgrade paths. Pricing verified.",
   h1="7 Best Vidnoz Alternatives in 2026",
-  lede="Vidnoz built its name on a generous free tier for AI avatar videos — but free has limits. Seven verified alternatives, from free-friendly to premium, October 1, 2026.",
+  lede="Vidnoz built its name on a generous free tier for AI avatar videos — but free has limits. Seven verified alternatives, from free-friendly to premium, October 5, 2026.",
   intro=("If you're here, you want AI video without the invoice. Vidnoz's free tier is genuinely useful for testing the waters — but watermarks, minute caps, and feature gates push serious creators to paid plans eventually. "
          "The alternatives below are ordered by how far your zero dollars go, then by what the upgrade path costs when you're ready. Every free-plan claim was verified on the official site."),
   tools=["Vidnoz","HeyGen","Synthesia","D-ID","Elai","Colossyan","DeepBrain AI","Hour One","Tavus"],
@@ -542,7 +557,7 @@ STATIC_PAGES = {
   "meta": "Privacy policy for AI Video & Voice Tool Comparisons: what data we collect, cookies, and Google AdSense.",
   "h1": "Privacy Policy",
   "body": """
-<p><em>Last updated: October 1, 2026.</em></p>
+<p><em>Last updated: October 5, 2026.</em></p>
 <p>This site publishes independent comparisons of AI video and voice software. We collect as little data as possible.</p>
 <h2>What we collect</h2>
 <ul>
