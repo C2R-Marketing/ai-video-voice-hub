@@ -2,12 +2,12 @@
  "tools": [
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "",
+    "has_program": true,
+    "commission": "Program confirmed on official partner page ('industry-leading affiliate commissions' claimed). No commission rate, cookie length, or payout minimum stated on official page — third-party 20–50% figures not used.",
     "cookie_days": null,
-    "has_program": false,
     "payout_min": "",
-    "status": "none-found"
+    "apply_url": "https://pictory.ai/partner-with-pictory",
+    "status": "verified"
    },
    "category": "ai-video-generator",
    "features": [
@@ -18,8 +18,8 @@
     "Licensed stock clips, music, and voiceovers"
    ],
    "free_plan": false,
-   "free_plan_details": "No permanent free plan \u2014 14-day free trial (per official pricing FAQ)",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "No permanent free plan — 14-day free trial = 3 video projects (per official FAQ)",
+   "last_verified": "2026-10-05",
    "name": "Pictory",
    "pricing_tiers": [
     {
@@ -48,7 +48,8 @@
     }
    ],
    "source_urls": [
-    "https://pictory.ai/pricing"
+    "https://pictory.ai/pricing",
+    "https://pictory.ai/partner-with-pictory"
    ],
    "strengths": [
     "Licensed stock clips, music, and voiceovers",
@@ -57,17 +58,17 @@
     "No watermark on paid plans"
    ],
    "url": "https://pictory.ai",
-   "verification_notes": "Official site + pricing FAQ fetched. A third-party affiliate-site page was removed at Pictory's request; no Pictory-hosted affiliate page was located.",
+   "verification_notes": "2026-10-05: plan structure confirmed (Starter/Professional/Teams/Enterprise); prices JS-rendered, not extractable — carried tiers are not re-confirmed. Page title: 'Pictory Pricing | From $25 per Month'. NEW: official partner page pictory.ai/partner-with-pictory confirms an affiliate program, but no rates/terms stated.",
    "verification_status": "partially-verified",
    "weaknesses": [
-    "No free plan \u2014 trial only (14-day free trial)",
+    "No free plan — trial only (14-day free trial)",
     "Pictory affiliate program not located on official pages"
    ]
   },
   {
    "affiliate": {
     "apply_url": "https://invideo.io/make/affiliate-program/",
-    "commission": "50% on monthly plans / 25% on annual plans \u2014 first billing cycle only (not recurring)",
+    "commission": "50% on monthly plans / 25% on annual plans — first billing cycle only (not recurring)",
     "cookie_days": 120,
     "has_program": true,
     "payout_min": "$30",
@@ -85,7 +86,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free plan available",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "InVideo",
    "pricing_tiers": [
     {
@@ -123,7 +124,7 @@
     "Strong AI model access (Seedance) on Plus/Max"
    ],
    "url": "https://invideo.io",
-   "verification_notes": "Official pricing page + official affiliate page both fetched and read.",
+   "verification_notes": "2026-10-05: verified — zero drift. Annual-monthly prices $20/$36/$75 re-confirmed on compare table; Free plan exists; unused credits don't roll over. Affiliate 50%/25% re-confirmed; cookie/payout carried from 2026-10-01 (in collapsed FAQ, not re-extracted).",
    "verification_status": "verified",
    "weaknesses": [
     "Affiliate commission is first-billing-cycle only, not recurring"
@@ -131,11 +132,11 @@
   },
   {
    "affiliate": {
-    "apply_url": "http://fliki.ai/affiliate-program",
+    "has_program": true,
     "commission": "30% recurring lifetime commission",
     "cookie_days": 30,
-    "has_program": true,
     "payout_min": "$50",
+    "apply_url": "https://fliki.ai/affiliate-program",
     "status": "verified"
    },
    "category": "ai-video-generator",
@@ -149,7 +150,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free tier: 3 credits/month, 720p with watermark, no card required",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Fliki",
    "pricing_tiers": [
     {
@@ -179,7 +180,7 @@
    ],
    "source_urls": [
     "https://fliki.ai/pricing",
-    "http://fliki.ai/affiliate-program"
+    "https://fliki.ai/affiliate-program"
    ],
    "strengths": [
     "30% recurring lifetime affiliate commission",
@@ -187,42 +188,45 @@
     "Voice cloning included on Standard"
    ],
    "url": "https://fliki.ai",
-   "verification_notes": "Official pricing page fetched but JS-rendered \u2014 plan names and prices confirmed from official page snippets; official affiliate page read in full.",
+   "verification_notes": "2026-10-05: structure confirmed, prices JS-rendered (not re-confirmed). Official page self-conflict: plan table says Premium 'Videos upto 40 minutes', FAQ twice says 30 minutes max — flagged. Active promo banner: FLIKIEXPLAINER40 = 40% off annual plans (time-limited). Affiliate 30% lifetime/30-day/$50 re-verified exactly.",
    "verification_status": "partially-verified",
    "weaknesses": [
-    "Pricing page is JS-heavy \u2014 tiers confirmed from official page snippets, not full read"
+    "Pricing page is JS-heavy — tiers confirmed from official page snippets, not full read"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "",
+    "has_program": false,
     "commission": "",
     "cookie_days": null,
-    "has_program": false,
     "payout_min": "",
+    "apply_url": "",
     "status": "none-found"
    },
    "category": "ai-video-generator",
    "features": [],
    "free_plan": false,
    "free_plan_details": "",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Lumen5",
    "pricing_tiers": [],
-   "source_urls": [],
+   "source_urls": [
+    "https://lumen5.com",
+    "http://help.lumen5.com/en/category/account-settings-billing-information-fhjc3z/"
+   ],
    "strengths": [],
    "url": "https://lumen5.com",
-   "verification_notes": "Official pricing page could not be fetched on 2026-10-01. Pricing details are being re-verified against the official site.",
+   "verification_notes": "2026-10-05: pricing page failed to fetch (no HTTP status) — pricing stays unverified. Homepage renders normally; company operating (not shut down). Official help center states verbatim: 'Lumen5 does not have an affiliate or referral program at this time' — contradicts third-party directories claiming one.",
    "verification_status": "unverified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "https://www.veed.io/affiliate",
+    "has_program": true,
     "commission": "20% initial + 20% recurring, with bonuses up to 50%",
     "cookie_days": null,
-    "has_program": true,
     "payout_min": "",
+    "apply_url": "https://www.veed.io/affiliate",
     "status": "verified"
    },
    "category": "ai-video-generator",
@@ -236,7 +240,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free plan: 10 video min/month, 2 min auto-subtitles, watermark",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "VEED",
    "pricing_tiers": [
     {
@@ -273,10 +277,10 @@
     "20% recurring affiliate commission with performance bonuses"
    ],
    "url": "https://www.veed.io",
-   "verification_notes": "Official pricing snippets + official affiliate page verified. Note: an older official pricing page lists Pro at $29/user/mo vs the current $49 \u2014 flagged for re-verification.",
-   "verification_status": "verified",
+   "verification_notes": "2026-10-05: pricing page JS-rendered — prices not extractable; Lite/Pro figures carried from prior runs, not re-confirmed → status unverified. Affiliate 20%+20%/bonuses up to 50% via Impact re-verified exactly.",
+   "verification_status": "unverified",
    "weaknesses": [
-    "Official pricing page is JS-rendered \u2014 tiers confirmed from official page snippets; an older official page lists Pro at $29/user/mo, a discrepancy flagged for re-check"
+    "Official pricing page is JS-rendered — tiers confirmed from official page snippets; an older official page lists Pro at $29/user/mo, a discrepancy flagged for re-check"
    ]
   },
   {
@@ -298,7 +302,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: 10 credits, watermarked exports, 720p",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Kapwing",
    "pricing_tiers": [
     {
@@ -328,14 +332,15 @@
    ],
    "source_urls": [
     "https://www.kapwing.com/pricing",
-    "https://www.kapwing.com/affiliates"
+    "https://www.kapwing.com/affiliates",
+    "https://kapwing.tapfiliate.com"
    ],
    "strengths": [
     "Up to 35% uncapped recurring affiliate commission",
     "Generous free tier for casual creators"
    ],
    "url": "https://www.kapwing.com",
-   "verification_notes": "Official pricing page + official affiliate program page both fetched and read.",
+   "verification_notes": "2026-10-05: verified — zero drift. Pro $24/mo ($16/mo annual), Business $64/mo ($50/mo annual) re-confirmed incl. annual-discount FAQ. Affiliate portal self-contradiction: tiers show 25/30/35% (Platinum 35%) but page copy says 'up to 25%' for top affiliates (likely typo — use tier table).",
    "verification_status": "verified",
    "weaknesses": []
   },
@@ -350,7 +355,7 @@
    },
    "category": "ai-video-generator",
    "features": [
-    "Gen-3/Gen-4 video generation",
+    "Gen-4.5 / Gen-4 Turbo / Kling 3.0 / Nano Banana Pro / Seedance 2.5 video generation (per official pricing page, 2026-10-05)",
     "Text-to-video",
     "Image-to-video",
     "Inpainting",
@@ -358,7 +363,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: 125 one-time credits that never expire",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Runway",
    "pricing_tiers": [
     {
@@ -394,7 +399,7 @@
     "Credits never expire on Free tier"
    ],
    "url": "https://runwayml.com",
-   "verification_notes": "Official pricing page fetched and read.",
+   "verification_notes": "2026-10-05: verified — zero price drift. Feature text updated: official model lineup is now Gen-4.5, Gen-4 Turbo, Kling 3.0, Nano Banana Pro, Seedance 2.5 (dataset's 'Gen-3/Gen-4' was stale).",
    "verification_status": "verified",
    "weaknesses": [
     "No affiliate/partner program located on official pages"
@@ -418,7 +423,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free tier with credit packs, no commercial license",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Pika",
    "pricing_tiers": [
     {
@@ -441,7 +446,7 @@
     },
     {
      "billing": "monthly",
-     "notes": "$76\u2013$704/mo annual packs; 8,550+ credits/month",
+     "notes": "$76–$704/mo annual packs; 8,550+ credits/month",
      "plan": "Fancy",
      "price_usd": 95
     }
@@ -453,7 +458,7 @@
     "Competitive generative video quality"
    ],
    "url": "https://pika.art",
-   "verification_notes": "Official pricing page fetched and read.",
+   "verification_notes": "2026-10-05: verified — zero drift. Annual saves 20% re-confirmed on compare table.",
    "verification_status": "verified",
    "weaknesses": [
     "No affiliate/partner program located on official pages"
@@ -461,11 +466,11 @@
   },
   {
    "affiliate": {
-    "apply_url": "https://www.steve.ai/affiliate",
-    "commission": "Up to 40% recurring commission",
-    "cookie_days": null,
     "has_program": true,
+    "commission": "Up to 40% commission ('Earn up to 40% in commission' — recurring NOT stated on official page); no earnings cap; monthly revenue reports; dedicated partner management; cookie and payout minimum not stated",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "https://www.steve.ai/affiliate",
     "status": "verified"
    },
    "category": "ai-video-generator",
@@ -475,20 +480,21 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free plan listed on the official pricing page (5 AI voiceovers, 80 animation characters); paid prices are JS-rendered and were not extractable",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Steve AI",
    "pricing_tiers": [],
    "source_urls": [
+    "https://www.steve.ai/pricing",
     "https://www.steve.ai/affiliate"
    ],
    "strengths": [
     "Up to 40% recurring affiliate commission"
    ],
    "url": "https://www.steve.ai",
-   "verification_notes": "Official pricing page fetched but JS-rendered \u2014 prices not extractable. Official affiliate page verified. Pricing is being re-verified against the official site.",
+   "verification_notes": "2026-10-05: tier structure confirmed (Free/Basic/Starter/Pro/Enterprise), but dollar prices JS-rendered — pricing stays unverified. Affiliate: program verified; 'up to 40% commission' — recurring NOT stated on the official page (dataset nuance corrected).",
    "verification_status": "unverified",
    "weaknesses": [
-    "Pricing page is JS-rendered \u2014 paid prices not extractable from the official page"
+    "Pricing page is JS-rendered — paid prices not extractable from the official page"
    ]
   },
   {
@@ -509,7 +515,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: 720p, 12 projects, 10-min videos with watermark",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "FlexClip",
    "pricing_tiers": [
     {
@@ -540,19 +546,19 @@
     "Prices cross-checked across multiple sources"
    ],
    "url": "https://www.flexclip.com",
-   "verification_notes": "Official pricing page partially JS-rendered; prices cross-checked via 4+ independent sources. Official affiliate page verified.",
+   "verification_notes": "2026-10-05: plan names Free/Plus/Business confirmed; numeric prices JS-rendered (FAQ only) — carried figures not re-confirmed. Affiliate 35%+/90-day cookie/Awin platform re-verified exactly.",
    "verification_status": "partially-verified",
    "weaknesses": [
-    "Official pricing page partially JS-rendered \u2014 figures cross-checked via 4+ sources"
+    "Official pricing page partially JS-rendered — figures cross-checked via 4+ sources"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "https://www.heygen.com/en-gb/affiliate-program",
-    "commission": "35% for the first 3 months (Creator & Team plans)",
-    "cookie_days": 30,
     "has_program": true,
+    "commission": "35% commission for the first 3 months of each referred subscription (Creator & Team plans); 30-day last-click cookie; $30 min payout via PayPal; 60-day verification hold; monthly payouts",
+    "cookie_days": 30,
     "payout_min": "$30 (PayPal)",
+    "apply_url": "https://www.heygen.com/en-gb/affiliate-program",
     "status": "verified"
    },
    "category": "ai-avatar",
@@ -566,7 +572,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: 3 videos/month, 1-minute max each, no card required",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "HeyGen",
    "pricing_tiers": [
     {
@@ -610,19 +616,19 @@
     "35% affiliate commission (verified on official page)"
    ],
    "url": "https://www.heygen.com",
-   "verification_notes": "Official pricing page + official affiliate program page both fetched and read. Affiliate terms (35%/3 months/30-day cookie) re-verified on the official page.",
+   "verification_notes": "2026-10-05: verified — prices and FAQ content-level re-verified, no changes. Affiliate terms re-verified (35%/3mo, 30-day cookie, $30 PayPal min, 60-day verification hold).",
    "verification_status": "verified",
    "weaknesses": [
-    "Affiliate commission covers the first 3 months only \u2014 not recurring"
+    "Affiliate commission covers the first 3 months only — not recurring"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "https://synthesia.io/partners/affiliates",
-    "commission": "25% on Starter and Creator plans",
-    "cookie_days": 60,
     "has_program": true,
-    "payout_min": "",
+    "commission": "25% commission on Starter and Creator plan payments; 60-day cookie; customer stays 'Qualified Customer' for 12 months from first purchase; $30 min payout (rolls over until met); monthly payment",
+    "cookie_days": 60,
+    "payout_min": "$30",
+    "apply_url": "https://www.synthesia.io/partners/affiliates",
     "status": "verified"
    },
    "category": "ai-avatar",
@@ -636,7 +642,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free (Basic): 500 credits/month, watermarked",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Synthesia",
    "pricing_tiers": [
     {
@@ -666,7 +672,8 @@
    ],
    "source_urls": [
     "https://www.synthesia.io/pricing",
-    "https://synthesia.io/partners/affiliates"
+    "https://www.synthesia.io/partners/affiliates",
+    "https://www.synthesia.io/terms/affiliate-terms"
    ],
    "strengths": [
     "Credit-based system (1 credit = 1 second of video)",
@@ -674,17 +681,17 @@
     "Strong enterprise and education footprint"
    ],
    "url": "https://www.synthesia.io",
-   "verification_notes": "Official pricing page + official affiliate page both fetched and read.",
+   "verification_notes": "2026-10-05: verified — Basic free (500 credits/mo), Starter $29/mo, Pro $89/mo, Enterprise re-confirmed. Plan renamed Creator → Pro vs older data. Affiliate terms fully re-verified.",
    "verification_status": "verified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "https://www.colossyan.com/affiliate-program/",
-    "commission": "25% recurring, up to 50% at higher tiers \u2014 for up to 12 months",
-    "cookie_days": 90,
     "has_program": true,
+    "commission": "Starts at 25% recurring, up to 50% at higher tiers; commissions paid for up to a year per referral; 90-day cookie; monthly payouts (Wise preferred, PayPal under conditions)",
+    "cookie_days": 90,
     "payout_min": "",
+    "apply_url": "https://www.colossyan.com/affiliate-program/",
     "status": "verified"
    },
    "category": "ai-avatar",
@@ -696,27 +703,27 @@
     "SCORM exports for LMS"
    ],
    "free_plan": true,
-   "free_plan_details": "Free: 20 min/month with NEO, no card required",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "Starter free plan: 20 NEO min/month, no card required",
+   "last_verified": "2026-10-05",
    "name": "Colossyan",
    "pricing_tiers": [
     {
+     "plan": "Free (Starter)",
+     "price_usd": 0,
      "billing": "monthly",
-     "notes": "20 min/month with NEO; no credit card required; 15 custom avatars + 3 voices",
-     "plan": "Free",
-     "price_usd": 0
+     "notes": "20 NEO min/mo, 15 custom avatars + 3 voices, 10 interactive videos/mo, 15 auto-translations/mo"
     },
     {
-     "billing": "annual-monthly",
-     "notes": "Billed annually; 30 min/month NEO + 10 min/month NEO2; 20 custom avatars + 5 voices; watermark removal; 5 SCORM exports/month; 1080p",
      "plan": "Professional",
-     "price_usd": 59
+     "price_usd": 59,
+     "billing": "annual-monthly",
+     "notes": "$59/mo billed annually; 30 NEO + 10 NEO2 min/mo, up to 3 editors, $30/mo per additional member, watermark removal, 5 SCORM/mo; monthly-billing rate not shown"
     },
     {
-     "billing": "custom",
-     "notes": "Contact sales",
      "plan": "Enterprise",
-     "price_usd": null
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Contact sales"
     }
    ],
    "source_urls": [
@@ -724,21 +731,21 @@
     "https://www.colossyan.com/affiliate-program/"
    ],
    "strengths": [
-    "25\u201350% recurring affiliate commission with 90-day cookie",
+    "25–50% recurring affiliate commission with 90-day cookie",
     "SCORM exports built for course creators"
    ],
    "url": "https://www.colossyan.com",
-   "verification_notes": "Official pricing page + official affiliate page both fetched and read.",
+   "verification_notes": "2026-10-05: verified — PLAN LINEUP CHANGED since 2026-10-01: 'Business' ($88/$70) is gone; Professional is the mid tier at $59/mo (annual, per FAQ) and Starter is free. Affiliate re-verified (25%→50% tiered, up to a year, 90-day cookie).",
    "verification_status": "verified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "https://elai.getrewardful.com/signup",
-    "commission": "25% recurring commission for the first 12 months of each subscription (excluding Enterprise)",
-    "cookie_days": null,
     "has_program": true,
+    "commission": "25% of referred plan payments for the first 12 months the customer stays (monthly: 25% of monthly payment; annual: 25% of annual payment); Enterprise plans excluded; paid monthly via Rewardful; no stated min payout; last-click attribution (day count not stated on official page)",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "https://elai.io/partners/",
     "status": "verified"
    },
    "category": "ai-avatar",
@@ -752,54 +759,59 @@
    ],
    "free_plan": false,
    "free_plan_details": "",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Elai",
    "pricing_tiers": [],
    "source_urls": [
-    "https://elai.getrewardful.com/signup"
+    "https://elai.io/pricing",
+    "https://elai.io/partners/",
+    "https://elai.io/affiliate-partner-terms-conditions/"
    ],
    "strengths": [
-    "25% recurring affiliate commission (verified via official Rewardful page)"
+    "25% affiliate commission for the first 12 months (verified on official elai.io partner pages, 2026-10-05)"
    ],
    "url": "https://elai.io",
-   "verification_notes": "Official pricing page could not be fetched on 2026-10-01. Official affiliate page (Rewardful) verified. Pricing is being re-verified against the official site.",
+   "verification_notes": "2026-10-05: pricing page loaded but plan cards JS-rendered — pricing stays unverified. Affiliate FULLY VERIFIED on official pages (25%/first 12 months, monthly via Rewardful, Enterprise excluded). Pricing needs a live-browser check.",
    "verification_status": "unverified",
    "weaknesses": [
-    "Official pricing page could not be fetched \u2014 pricing details are being re-verified"
+    "Official pricing page could not be fetched — pricing details are being re-verified"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "",
+    "has_program": true,
+    "commission": "INVITE-ONLY (open to selected D-ID users at D-ID's sole discretion). Affiliation Fee = LOWER of the referred user's first two consecutive months' net subscription fees (minus 6% processor fee), payable once aggregate reaches $30 within 12 months. Sharing must be personal and non-commercial — no mass outreach, blogs, social posts, or coupon sites. Terms last updated June 2023.",
     "cookie_days": null,
-    "has_program": false,
-    "payout_min": "",
-    "status": "none-found"
+    "payout_min": "$30 (aggregate within 12 mo)",
+    "apply_url": "https://www.d-id.com/affiliate-terms/",
+    "status": "verified"
    },
    "category": "ai-avatar",
    "features": [],
    "free_plan": false,
    "free_plan_details": "No official pricing found on official pages during verification",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "D-ID",
    "pricing_tiers": [],
-   "source_urls": [],
+   "source_urls": [
+    "https://www.d-id.com/pricing",
+    "https://www.d-id.com/affiliate-terms/"
+   ],
    "strengths": [],
    "url": "https://www.d-id.com",
-   "verification_notes": "No official pricing or affiliate pages could be located on 2026-10-01. All details are being re-verified against the official site.",
+   "verification_notes": "2026-10-05: pricing page JS-rendered — pricing stays unverified (same as 2026-10-01). Affiliate: INVITE-ONLY with non-commercial-sharing terms (affiliation fee = lower of first two months' net fees minus 6%, $30 aggregate threshold). Do NOT present D-ID as an open affiliate program.",
    "verification_status": "unverified",
    "weaknesses": [
-    "No official pricing page could be located \u2014 all pricing is being re-verified"
+    "No official pricing page could be located — all pricing is being re-verified"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "https://www.deepbrain.io/affiliate",
-    "commission": "40% recurring commission for 6 months",
-    "cookie_days": 60,
     "has_program": true,
+    "commission": "40% recurring commission for the referral's first 6 months; 60-day cookie, first-click attribution; $30 min payout via PayPal; 1-month fraud review then monthly payout",
+    "cookie_days": 60,
     "payout_min": "$30",
+    "apply_url": "https://www.deepbrain.io/affiliate",
     "status": "verified"
    },
    "category": "ai-avatar",
@@ -811,11 +823,49 @@
     "AI Human (real-time conversational AI)"
    ],
    "free_plan": true,
-   "free_plan_details": "Homepage states 'Get started for free', no credit card required \u2014 no official pricing page with tiers was found",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "AI Studios Free (3 videos, 1 min each, 720p) + LiveAvatar Free (2 credits)",
+   "last_verified": "2026-10-05",
    "name": "DeepBrain AI",
-   "pricing_tiers": [],
+   "pricing_tiers": [
+    {
+     "plan": "AI Studios Free",
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "3 videos, 1 min each, 720p, 16 generative credits"
+    },
+    {
+     "plan": "AI Studios Personal",
+     "price_usd": 24,
+     "billing": "monthly",
+     "notes": "Unlimited videos, 30-min max, 1080p, 60 generative credits/mo"
+    },
+    {
+     "plan": "AI Studios Team",
+     "price_usd": 55,
+     "billing": "monthly",
+     "notes": "Per seat/mo; 4K, 60-min max, 150 credits/seat/mo"
+    },
+    {
+     "plan": "Interactive Avatar (LiveAvatar) Free",
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "2 credits"
+    },
+    {
+     "plan": "Interactive Avatar Standard",
+     "price_usd": 99,
+     "billing": "monthly",
+     "notes": "100 credits, 1 credit per 5 min"
+    },
+    {
+     "plan": "Enterprise",
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "AI Studios + LiveAvatar; contact sales"
+    }
+   ],
    "source_urls": [
+    "https://www.deepbrain.io/pricing",
     "https://www.deepbrain.io/affiliate"
    ],
    "strengths": [
@@ -823,20 +873,20 @@
     "Real-time conversational AI humans"
    ],
    "url": "https://www.deepbrain.io",
-   "verification_notes": "Official affiliate page verified. No official pricing page found \u2014 pricing is being re-verified against the official site.",
-   "verification_status": "unverified",
+   "verification_notes": "2026-10-05: FULLY VERIFIED (was unverified). AI Studios Free $0 / Personal $24/mo / Team $55/seat/mo / Enterprise; LiveAvatar Free $0 / Standard $99/mo / Enterprise; 20% off with annual billing. Affiliate 40%/6mo/60-day/$30 re-confirmed exactly.",
+   "verification_status": "verified",
    "weaknesses": [
-    "No official pricing page with tiers found \u2014 pricing is being re-verified"
+    "No official pricing page with tiers found — pricing is being re-verified"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "https://hourone.ai/affiliate-program/",
-    "commission": "20% of Net Revenue for the first 12 months of each customer's contract",
-    "cookie_days": 60,
     "has_program": true,
+    "commission": "20% of Net Revenue for the first 12 months of each customer's contract (carried from 2026-10-01 — NOT re-confirmed this run; official affiliate page returned HTTP 500 on 2026-10-05, program existence inconclusive)",
+    "cookie_days": 60,
     "payout_min": "$250",
-    "status": "verified"
+    "apply_url": "https://hourone.ai/affiliate-program/",
+    "status": "unverified"
    },
    "category": "ai-avatar",
    "features": [
@@ -847,30 +897,55 @@
     "AI video wizard"
    ],
    "free_plan": false,
-   "free_plan_details": "",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "Free trial account: 3 min total publishing time",
+   "last_verified": "2026-10-05",
    "name": "Hour One",
-   "pricing_tiers": [],
+   "pricing_tiers": [
+    {
+     "plan": "Free Trial",
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "3 min total publishing time, 100+ avatars, 1 editor + 1 viewer, business email required, no expiry"
+    },
+    {
+     "plan": "Lite",
+     "price_usd": 30,
+     "billing": "monthly",
+     "notes": "$24/mo billed annually; 10 min/mo"
+    },
+    {
+     "plan": "Business",
+     "price_usd": 112,
+     "billing": "monthly",
+     "notes": "$96/mo billed annually; 20/30/40-min options"
+    },
+    {
+     "plan": "Enterprise",
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Unlimited minutes, cinematic avatar, API, SSO"
+    }
+   ],
    "source_urls": [
-    "https://hourone.ai/affiliate-program/"
+    "https://hourone.ai/pricing"
    ],
    "strengths": [
     "Verified 20% affiliate commission with 60-day cookie"
    ],
    "url": "https://hourone.ai",
-   "verification_notes": "Official affiliate page verified. Official pricing page returned HTTP 500 \u2014 pricing is being re-verified against the official site.",
-   "verification_status": "unverified",
+   "verification_notes": "2026-10-05: pricing FULLY VERIFIED (was unverified): Free Trial $0 (3 min total) / Lite $30 ($24 annual) / Business $112 ($96 annual) / Enterprise. Affiliate: hourone.ai/affiliate-program returned HTTP 500 — program existence INCONCLUSIVE; prior terms (20%/12mo/$250) carried as unverified. Needs a live-browser check.",
+   "verification_status": "verified",
    "weaknesses": [
-    "Official pricing page returned HTTP 500 on 2026-10-01 \u2014 pricing is being re-verified"
+    "Affiliate page returned HTTP 500 on 2026-10-05 — affiliate program status inconclusive, terms not re-confirmed"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "",
-    "cookie_days": null,
     "has_program": false,
+    "commission": "No public self-serve program. Official Referral Partnerships page is contact-based with no published rates ('Earn commission for every customer you refer' — no numbers). Do not invent a rate.",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "https://www.tavus.io/lp/partnerships",
     "status": "none-found"
    },
    "category": "ai-avatar",
@@ -881,62 +956,63 @@
     "Developer-first API"
    ],
    "free_plan": true,
-   "free_plan_details": "PALs Free + Developer Basic free tiers",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "Developer Basic + PALs Free tiers",
+   "last_verified": "2026-10-05",
    "name": "Tavus",
    "pricing_tiers": [
     {
-     "billing": "monthly",
-     "notes": "Free PALs tier",
-     "plan": "PALs Free",
-     "price_usd": 0
-    },
-    {
-     "billing": "monthly",
-     "notes": "",
-     "plan": "PALs Plus",
-     "price_usd": 20
-    },
-    {
-     "billing": "monthly",
-     "notes": "",
-     "plan": "PALs Max",
-     "price_usd": 50
-    },
-    {
-     "billing": "monthly",
-     "notes": "25 min conversational video; 5 min video generation; 25 stock replicas",
      "plan": "Developer Basic",
-     "price_usd": 0
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "Free; 25 min conversational video/mo, 5 min video generation, 25 stock replicas"
     },
     {
-     "billing": "monthly",
-     "notes": "100 min conversational video; 10 min generation; 3 replica trainings/month",
      "plan": "Developer Starter",
-     "price_usd": 59
-    },
-    {
+     "price_usd": 59,
      "billing": "monthly",
-     "notes": "",
-     "plan": "Developer Growth",
-     "price_usd": 397
+     "notes": "$59/mo + pay-as-you-go; 100 CVI min, 10 video-gen min, 3 custom replica trainings/mo"
     },
     {
-     "billing": "custom",
-     "notes": "Contact sales",
+     "plan": "Developer Growth",
+     "price_usd": 397,
+     "billing": "monthly",
+     "notes": "$397/mo + pay-as-you-go; 1,250 CVI min, 100 video-gen min, 7 replica trainings/mo"
+    },
+    {
      "plan": "Developer Enterprise",
-     "price_usd": null
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Contact sales"
+    },
+    {
+     "plan": "PALs Free",
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "15 min voice/video calls"
+    },
+    {
+     "plan": "PALs Plus",
+     "price_usd": 20,
+     "billing": "monthly",
+     "notes": "150 min"
+    },
+    {
+     "plan": "PALs Max",
+     "price_usd": 50,
+     "billing": "monthly",
+     "notes": "500 min"
     }
    ],
    "source_urls": [
-    "https://www.tavus.io/pricing"
+    "https://www.tavus.io/pricing",
+    "https://www.tavus.io/lp/partnerships"
    ],
    "strengths": [
     "Best-in-class personal replica realism",
     "Developer API for conversational video"
    ],
    "url": "https://www.tavus.io",
-   "verification_notes": "Official pricing page fetched and read.",
+   "verification_notes": "2026-10-05: verified — Developer Basic free / Starter $59+PAYG / Growth $397+PAYG (1,250 CVI min — older third-party '500' figure is stale) / Enterprise; PALs Free/Plus $20/Max $50. No public self-serve affiliate program — referral partnerships are contact-based; no rate listed.",
    "verification_status": "verified",
    "weaknesses": [
     "No affiliate/partner program found on official pages"
@@ -944,11 +1020,11 @@
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "",
-    "cookie_days": null,
     "has_program": false,
+    "commission": "Program UNDER CONSTRUCTION — waitlist only per official page (affiliate-program-waitlist.html). Any Vidnoz tracking link may be dead/earning nothing.",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "https://www.vidnoz.com/affiliate-program-waitlist.html",
     "status": "none-found"
    },
    "category": "ai-avatar",
@@ -960,7 +1036,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: daily free credits, 1,800+ avatars, 890 voices, 720p with watermark",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Vidnoz",
    "pricing_tiers": [
     {
@@ -971,27 +1047,28 @@
     }
    ],
    "source_urls": [
-    "https://www.vidnoz.com/pricing.html"
+    "https://www.vidnoz.com/pricing.html",
+    "https://www.vidnoz.com/affiliate-program-waitlist.html"
    ],
    "strengths": [
     "Generous free tier with daily credits",
     "Huge avatar and template library"
    ],
    "url": "https://www.vidnoz.com",
-   "verification_notes": "Free tier confirmed on official pricing page; paid-tier prices are JS-rendered and not extractable. Paid pricing is being re-verified.",
-   "verification_status": "unverified",
+   "verification_notes": "2026-10-05: structure confirmed (credit-based plans, 3,200+ templates, 1,800–1,900+ avatars); dollar prices JS-rendered — their own blog posts contradict each other on prices, so no verified price. Affiliate program UNDER CONSTRUCTION (official waitlist) — tracking links likely dead. Pricing needs a live-browser check.",
+   "verification_status": "partially-verified",
    "weaknesses": [
-    "Paid-tier prices are JS-rendered on the official page \u2014 not extractable"
+    "Paid-tier prices are JS-rendered on the official page — not extractable"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "Not stated on official pages (program confirmed via official blog)",
+    "has_program": false,
+    "commission": "No current affiliate page on official site — only a stale ~2023 official blog mention (40% lifetime recurring, $100 threshold via Paykickstart); treat as unverified.",
     "cookie_days": null,
-    "has_program": true,
     "payout_min": "",
-    "status": "verified"
+    "apply_url": "",
+    "status": "unverified"
    },
    "category": "ai-avatar",
    "features": [
@@ -1002,77 +1079,82 @@
     "White label"
    ],
    "free_plan": false,
-   "free_plan_details": "",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "No free plan listed",
+   "last_verified": "2026-10-05",
    "name": "Synthesys",
    "pricing_tiers": [
     {
-     "billing": "monthly",
-     "notes": "$20/mo billed annually ($240/yr); 3,500 credits/month; full commercial rights; brand kit",
      "plan": "Starter",
-     "price_usd": 29
+     "price_usd": 29,
+     "billing": "monthly",
+     "notes": "$20/mo billed annually ($240/yr); 3,500 credits/mo"
     },
     {
-     "billing": "monthly",
-     "notes": "$41/mo billed annually ($492/yr); 8,000 credits/month",
      "plan": "Pro",
-     "price_usd": 59
+     "price_usd": 59,
+     "billing": "monthly",
+     "notes": "$41/mo billed annually ($492/yr); 8,000 credits"
     },
     {
-     "billing": "monthly",
-     "notes": "$83/mo billed annually ($996/yr); 17,000 credits/month; social scheduling",
      "plan": "Agency",
-     "price_usd": 119
+     "price_usd": 119,
+     "billing": "monthly",
+     "notes": "$83/mo billed annually ($996/yr); 17,000 credits"
     },
     {
-     "billing": "monthly",
-     "notes": "$139/mo billed annually ($1,668/yr); 30,000+ credits/month; dedicated manager",
      "plan": "Max",
-     "price_usd": 199
+     "price_usd": 199,
+     "billing": "monthly",
+     "notes": "$139/mo billed annually ($1,668/yr); 30,000+ credits"
+    },
+    {
+     "plan": "Credit packs",
+     "price_usd": 10,
+     "billing": "one-time",
+     "notes": "$10/1,000 credits; $25/2,750 credits; $50/6,000 credits"
     }
    ],
    "source_urls": [
-    "https://synthesys.io/pricing/"
+    "https://synthesys.io/pricing"
    ],
    "strengths": [
-    "Full commercial rights on paid plans",
-    "Affiliate program confirmed on official blog"
+    "Full commercial rights on paid plans"
    ],
    "url": "https://synthesys.io",
-   "verification_notes": "Official pricing page fetched and read. Affiliate program confirmed via official blog.",
+   "verification_notes": "2026-10-05: verified — Starter $29 ($20 annual) / Pro $59 ($41) / Agency $119 ($83) / Max $199 ($139) / credit packs. PIVOT: now an 'AI Video Agent' for ad creation (UGC ads, TV commercials, faceless stories) — not a classic avatar/presenter tool; hub copy is stale. No current affiliate page on official site (stale ~2023 blog mention unverified).",
    "verification_status": "verified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "",
+    "has_program": true,
+    "commission": "Official affiliate page exists at elevenlabs.io/affiliates but the whole domain was policy-blocked in this environment on 2026-10-05 — no commission rate, cookie, or payout verified against an official page. Third-party 22%/90-day claims not used.",
     "cookie_days": null,
-    "has_program": false,
     "payout_min": "",
-    "status": "none-found"
+    "apply_url": "https://elevenlabs.io/affiliates",
+    "status": "unverified"
    },
    "category": "ai-voice",
    "features": [],
    "free_plan": false,
    "free_plan_details": "",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "ElevenLabs",
    "pricing_tiers": [],
    "source_urls": [],
    "strengths": [],
    "url": "https://elevenlabs.io",
-   "verification_notes": "Official pricing page (elevenlabs.io/pricing) could not be read on 2026-10-01 \u2014 the domain was blocked by the fetch policy. No pricing, free-plan, or affiliate data verified against an official page. Unverified third-party descriptions are intentionally not shown here. Pricing is being re-verified against the official site.",
+   "verification_notes": "2026-10-05: whole elevenlabs.io domain policy-blocked in this environment — no official page readable. Pricing and affiliate stay unverified. Live-browser check spawned 2026-10-05 (pending).",
    "verification_status": "unverified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "20% of revenue from the referred person for two years after their initial transaction",
-    "cookie_days": 90,
     "has_program": true,
+    "commission": "20% recurring per referral for up to 24 months from signup; 90-day attribution; payouts monthly via PartnerStack (PayPal/Stripe); commission-only, no referral discounts; payout minimum not stated",
+    "cookie_days": 90,
     "payout_min": "",
+    "apply_url": "https://murf.ai/partner-with-us/affiliate",
     "status": "verified"
    },
    "category": "ai-voice",
@@ -1085,7 +1167,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: $10 free API credit every month, no credit card required",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Murf",
    "pricing_tiers": [
     {
@@ -1109,7 +1191,7 @@
    ],
    "source_urls": [
     "https://murf.ai/pricing",
-    "https://murf.ai/legal/affiliate-program-terms-of-service"
+    "https://murf.ai/partner-with-us/affiliate"
    ],
    "strengths": [
     "150+ voices in 35+ languages; HIPAA/GDPR compliant with ISO 27001 and SOC 2 Type II certifications",
@@ -1118,8 +1200,8 @@
     "Purchased credits never expire"
    ],
    "url": "https://murf.ai",
-   "verification_notes": "Official pricing page fetched and verified, but it shows API/pay-as-you-go pricing only \u2014 the Studio subscription tiers (Free/Creator/Business/Enterprise) were not visible on the fetched page. Official affiliate terms page verified: 20% for 2 years, 90-day cookie.",
-   "verification_status": "partial",
+   "verification_notes": "2026-10-05: pricing page read — TTS API figures verified ($10/mo free credit; Falcon $0.01/1,000 chars); Studio tiers JS-rendered (prices not re-confirmed). Affiliate FULLY VERIFIED: 20% recurring/24mo, 90-day cookie, PartnerStack, monthly payouts.",
+   "verification_status": "partially-verified",
    "weaknesses": [
     "The fetched official pricing page shows API/pay-as-you-go pricing only; Studio subscription tiers not visible",
     "Concurrency capped at 5 on the listed plans"
@@ -1127,34 +1209,34 @@
   },
   {
    "affiliate": {
-    "apply_url": "",
+    "has_program": false,
     "commission": "",
     "cookie_days": null,
-    "has_program": false,
     "payout_min": "",
+    "apply_url": "",
     "status": "none-found"
    },
    "category": "ai-voice",
    "features": [],
    "free_plan": false,
    "free_plan_details": "",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "PlayHT",
    "pricing_tiers": [],
    "source_urls": [],
    "strengths": [],
    "url": "https://play.ht",
-   "verification_notes": "Official pricing page (play.ht/pricing/) could not be read on 2026-10-01 (fetch failure). No pricing verified. Third-party sources claim acquisition and shutdown \u2014 none confirmed on the official site, and unconfirmed third-party claims are intentionally not shown here. All details are being re-verified against the official site.",
+   "verification_notes": "2026-10-05: play.ht/pricing DNS resolution failed (domain unreachable) — pricing stays unverified. Third-party reports of PlayAI rebrand + Meta acquisition + shutdown remain unconfirmed via official sources. Tool NOT removed per policy; recommend live confirmation of shutdown status before delisting.",
    "verification_status": "unverified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "Rate not published on official pages",
-    "cookie_days": 60,
     "has_program": true,
-    "payout_min": "$25",
+    "commission": "Rate not disclosed on official page ('compelling commission structure… high payouts'). Covers Premium, VoiceOver Studio Basic, Studio Pro. Qualified action = signup AND paid-plan purchase within 60 days of click (60-day attribution window). Payout minimum not stated. Old third-party 50/50 revenue-share claim is stale.",
+    "cookie_days": 60,
+    "payout_min": "",
+    "apply_url": "https://speechify.com/affiliates",
     "status": "verified"
    },
    "category": "ai-voice",
@@ -1167,33 +1249,57 @@
     "Commercial usage rights in perpetuity (paid plans)"
    ],
    "free_plan": true,
-   "free_plan_details": "Free: 600 Studio credits; no voice cloning; no commercial usage rights",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "Free Reader + Free API tier (500K chars/mo)",
+   "last_verified": "2026-10-05",
    "name": "Speechify",
    "pricing_tiers": [
     {
+     "plan": "Free (Reader)",
+     "price_usd": 0,
      "billing": "monthly",
-     "notes": "$0 forever; 600 Studio credits; no voice cloning; no commercial usage rights",
-     "plan": "Free Plan",
-     "price_usd": 0
+     "notes": "Listen up to 1.5x, 10 basic voices, TTS only"
     },
     {
-     "billing": "annual-monthly",
-     "notes": "Billed annually at $100/year; 86,400 Studio credits; voice cloning; stock music/video/images; commercial usage rights",
-     "plan": "Studio Starter",
-     "price_usd": 8.33
+     "plan": "Premium (Reader)",
+     "price_usd": 29,
+     "billing": "monthly",
+     "notes": "1000+ voices, 60+ languages, up to 5x speed, Scan & Listen, AI Summaries & Chats, Drive/Dropbox/OneDrive, Voice Typing, AI Podcasts, Voice AI Assistant; annual price not shown"
     },
     {
-     "billing": "annual-monthly",
-     "notes": "Billed annually at $300/year; 345,600 Studio credits; everything in Studio Starter",
-     "plan": "Studio Creator",
-     "price_usd": 25
+     "plan": "Free (API)",
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "500K chars/mo, then pauses"
+    },
+    {
+     "plan": "API Starter",
+     "price_usd": 10,
+     "billing": "monthly",
+     "notes": "1.9M chars, then $10/1M chars"
+    },
+    {
+     "plan": "API Pro",
+     "price_usd": 99,
+     "billing": "monthly",
+     "notes": "13.5M chars, then $8/1M chars"
+    },
+    {
+     "plan": "API Scale",
+     "price_usd": 499,
+     "billing": "monthly",
+     "notes": "78M chars, then $6/1M chars"
+    },
+    {
+     "plan": "Enterprise",
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Contact sales"
     }
    ],
    "source_urls": [
-    "https://Speechify.com/pricing-studio/",
-    "https://speechify.com/affiliates-terms/",
-    "http://speechify.com/affiliates"
+    "https://speechify.com/pricing",
+    "https://speechify.com/pricing-api/",
+    "https://speechify.com/affiliates"
    ],
    "strengths": [
     "With Studio you own the audio output and commercial rights in perpetuity (paid plans)",
@@ -1201,7 +1307,7 @@
     "1,000+ realistic voices"
    ],
    "url": "https://speechify.com",
-   "verification_notes": "Official pricing page + official affiliate terms page both fetched and read. Note: the affiliate landing page states a 60-day attribution window while the terms agreement states 90 days for the Individual Consumer program \u2014 discrepancy flagged.",
+   "verification_notes": "2026-10-05: FULLY VERIFIED — Reader Free $0 / Premium $29/mo; API Free $0 / Starter $10 / Pro $99 / Scale $499 / Enterprise. Affiliate page live; rate undisclosed (old 50/50 claim stale); 60-day attribution window.",
    "verification_status": "verified",
    "weaknesses": [
     "Free plan excludes voice cloning and commercial usage rights",
@@ -1211,38 +1317,63 @@
   },
   {
    "affiliate": {
-    "apply_url": "",
+    "has_program": false,
     "commission": "",
     "cookie_days": null,
-    "has_program": false,
     "payout_min": "",
+    "apply_url": "",
     "status": "none-found"
    },
    "category": "ai-voice",
    "features": [],
    "free_plan": false,
-   "free_plan_details": "",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "Flex tier: $0/mo pay-as-you-go credits",
+   "last_verified": "2026-10-05",
    "name": "Resemble AI",
-   "pricing_tiers": [],
+   "pricing_tiers": [
+    {
+     "plan": "Flex",
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "$0/mo pay-as-you-go credits (never expire): Detect audio $0.035/sec, images $0.035/image, video $0.070/sec, Intelligence $0.025/sec, Watermarker encode $0.00050/call, decode $0.00020/call, Agent Detection $1/1,000 sessions; 1 seat"
+    },
+    {
+     "plan": "Team",
+     "price_usd": 350,
+     "billing": "monthly",
+     "notes": "$350/mo monthly / $280/mo billed annually"
+    },
+    {
+     "plan": "Business",
+     "price_usd": 1000,
+     "billing": "monthly",
+     "notes": "$1,000/mo monthly / $800/mo billed annually"
+    },
+    {
+     "plan": "Enterprise",
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Contact sales"
+    }
+   ],
    "source_urls": [
     "https://www.resemble.ai/pricing"
    ],
    "strengths": [],
    "url": "https://www.resemble.ai",
-   "verification_notes": "The official pricing page fetched on 2026-10-01 now lists only Deepfake Detection & AI Security products (Flex $0/mo, Team $350/mo billed monthly or $280/mo annually, Business $1,000/mo or $800/mo annually, Enterprise custom). Voice-generator pricing is no longer published \u2014 Resemble appears to have pivoted to AI security products. No affiliate/partner program found on official pages.",
-   "verification_status": "unverified",
+   "verification_notes": "2026-10-05: PIVOT RE-CONFIRMED — homepage is now 'Multimodal Deepfake Detection and Watermarking for Enterprise'; consumer voice tiers are GONE from the official site. Current pricing read: Flex $0 / Team $350 ($280 annual) / Business $1,000 ($800 annual) / Enterprise. No affiliate program on official pages. Recommend removing from voice comparisons (kept per no-delete policy).",
+   "verification_status": "partially-verified",
    "weaknesses": [
-    "Voice-generator pricing is no longer published on the official site \u2014 the company appears to have pivoted to AI security products"
+    "Voice-generator pricing is no longer published on the official site — the company appears to have pivoted to AI security products"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "",
-    "cookie_days": null,
     "has_program": false,
+    "commission": "No public affiliate program on official pages. Third-party press mentions a June 2025 'WellSaid Partner Program,' but it is B2B API co-selling with no wellsaid.io page — not a public affiliate program.",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "",
     "status": "none-found"
    },
    "category": "ai-voice",
@@ -1258,49 +1389,49 @@
    ],
    "free_plan": true,
    "free_plan_details": "Trial: 3 download minutes/month, no commercial usage rights, no card required",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "WellSaid Labs",
    "pricing_tiers": [
     {
-     "billing": "monthly",
-     "notes": "Free; 3 download minutes/month; no commercial rights; no credit card required",
      "plan": "Trial",
-     "price_usd": 0
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "3 download min/mo, no commercial rights, no credit card"
     },
     {
-     "billing": "annual-monthly",
-     "notes": "Billed annually at $120/year (save 47%); 240 downloaded minutes/year; monthly-billing option at $19/mo",
      "plan": "Starter",
-     "price_usd": 10
+     "price_usd": 19,
+     "billing": "monthly",
+     "notes": "$19/mo billed monthly; $10/mo billed annually ($120/yr, save 47%; 240 min/yr)"
     },
     {
-     "billing": "annual-monthly",
-     "notes": "Billed annually at $396/year (save 33%); 2,160 downloaded minutes/year; monthly-billing option at $49/mo",
      "plan": "Pro",
-     "price_usd": 33
+     "price_usd": 49,
+     "billing": "monthly",
+     "notes": "$49/mo billed monthly; $33/mo billed annually ($396/yr; 180 min/mo, 2,160 min/yr)"
     },
     {
-     "billing": "annual-monthly",
-     "notes": "Billed annually at $1,920/year per user; 2,880 downloaded minutes/year per user; up to 5 seats; team workspace, Adobe Premiere Pro integration",
      "plan": "Business",
-     "price_usd": 160
+     "price_usd": 160,
+     "billing": "annual-monthly",
+     "notes": "$160/user/mo billed annually ($1,920/yr/user; 2,880 min/yr/user, up to 5 seats)"
     },
     {
-     "billing": "custom",
-     "notes": "Custom minutes/year per user; everything in Business plus custom seats, all languages, translation, priority support, up to 96 kHz, SSO; contact sales",
      "plan": "Enterprise",
-     "price_usd": null
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Contact sales"
     }
    ],
    "source_urls": [
-    "https://www.wellsaid.io/ai-voice-pricing"
+    "https://www.wellsaid.io/pricing"
    ],
    "strengths": [
     "Unlimited generation on paid plans; full commercial rights on paid plans",
     "Curated voice actors; SOC 2 compliance; never trains on customer data"
    ],
    "url": "https://www.wellsaid.io",
-   "verification_notes": "Official pricing page fetched and read (brand now operates at wellsaid.io). No affiliate/commission program found \u2014 WellSaid operates a B2B Partner Program for API ecosystem partners only.",
+   "verification_notes": "2026-10-05: verified — Trial $0 / Starter $19 ($10 annual) / Pro $49 ($33 annual) / Business $160/user/mo annual / Enterprise. Creator tier rebranded to Starter with lower entry pricing. No public affiliate program (June 2025 'Partner Program' is B2B co-selling).",
    "verification_status": "verified",
    "weaknesses": [
     "Paid quotas apply to downloaded finished audio",
@@ -1309,11 +1440,11 @@
   },
   {
    "affiliate": {
-    "apply_url": "http://LOVO.ai/affiliate-program",
-    "commission": "20% recurring commission for 24 months on all new customers",
-    "cookie_days": null,
     "has_program": true,
+    "commission": "20% recurring for 24 months on all new customers; no minimums; paid monthly; approval ~1 week; cookie and payout minimum not stated on official page",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "https://lovo.ai/affiliate-program",
     "status": "verified"
    },
    "category": "ai-voice",
@@ -1324,32 +1455,58 @@
     "Use cases: education, marketing, corporate training, explainer videos, YouTube videos, podcasts, social media, product demos"
    ],
    "free_plan": false,
-   "free_plan_details": "",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "Free-tier terms not stated on official page ('Start now for free' CTAs only) — unverified",
+   "last_verified": "2026-10-05",
    "name": "Lovo",
-   "pricing_tiers": [],
+   "pricing_tiers": [
+    {
+     "plan": "Basic",
+     "price_usd": 24,
+     "billing": "monthly",
+     "notes": "$24/mo ($288/yr); 2 hrs/mo generation, 500+ voices, 5 clones, 120 min/mo auto subtitles, 30 GB, 10 projects, 1080p export"
+    },
+    {
+     "plan": "Pro",
+     "price_usd": 24,
+     "billing": "monthly",
+     "notes": "$24/mo ($288/yr); 5 hrs/mo, unlimited clones, Pro V2 voices, AI writer/SFX, team collab, priority queue, 100 GB, 50 projects"
+    },
+    {
+     "plan": "Pro+",
+     "price_usd": 75,
+     "billing": "monthly",
+     "notes": "$75/mo ($900/yr); 20 hrs/mo, 300 min/mo subtitles, priority support, unlimited projects, 400 GB"
+    },
+    {
+     "plan": "Enterprise",
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Contact sales"
+    }
+   ],
    "source_urls": [
-    "http://LOVO.ai/affiliate-program"
+    "https://lovo.ai/pricing",
+    "https://lovo.ai/affiliate-program"
    ],
    "strengths": [
     "Affiliate terms: no minimums, monthly payouts, support and training",
     "2,000,000+ users claimed (official page)"
    ],
    "url": "https://lovo.ai",
-   "verification_notes": "Official affiliate page verified. No official pricing page could be located on lovo.ai \u2014 pricing is being re-verified against the official site.",
-   "verification_status": "unverified",
+   "verification_notes": "2026-10-05: FULLY VERIFIED (was unverified) — Basic $24 / Pro $24 / Pro+ $75 / Enterprise; 'SAVE UP TO 50% WITH YEARLY' promo banner (may expire). Free-tier terms not stated on page. Affiliate 20% recurring/24mo re-verified.",
+   "verification_status": "verified",
    "weaknesses": [
-    "No official pricing page could be located \u2014 pricing is being re-verified"
+    "No official pricing page could be located — pricing is being re-verified"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "",
+    "has_program": true,
+    "commission": "Async Affiliate Program (in-house, not via a network): 25% commission on every eligible subscription (no tiers stated); cookie length and payout minimum not stated on official page",
     "cookie_days": null,
-    "has_program": false,
     "payout_min": "",
-    "status": "none-found"
+    "apply_url": "https://podcastle.ai/affiliate",
+    "status": "verified"
    },
    "category": "ai-voice",
    "features": [
@@ -1361,8 +1518,8 @@
     "Magic Dust AI audio cleanup; multitrack audio and video timeline editing"
    ],
    "free_plan": true,
-   "free_plan_details": "Free: 10 lifetime AI credits, ~15 min TTS lifetime, 720p max video export",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "Free: lifetime quotas (no card required) — 10 AI credits lifetime, 1 hr lifetime media minutes to AI chat, 1 hr lifetime remote recording, 2 hr lifetime transcription (shared), ~15 min (~12k chars) lifetime TTS, 2 GB storage, 720p max, watermarked",
+   "last_verified": "2026-10-05",
    "name": "Podcastle",
    "pricing_tiers": [
     {
@@ -1373,26 +1530,28 @@
     }
    ],
    "source_urls": [
-    "https://podcastle.ai/pricing"
+    "https://podcastle.ai/pricing",
+    "https://podcastle.ai/affiliate",
+    "https://async.com/pricing"
    ],
    "strengths": [
     "'One subscription. Everything covered': record, edit, dub, subtitle, create clips, clone voices in one platform (official)",
     "7-day refund policy on new subscriptions; PayPal and major cards accepted"
    ],
    "url": "https://podcastle.ai",
-   "verification_notes": "Official pricing page (now branded 'Async') publishes credit allowances per tier but USD prices were not extractable from the fetched official page text. Paid prices are being re-verified.",
-   "verification_status": "unverified",
+   "verification_notes": "2026-10-05: REBRAND RE-CONFIRMED — product is now 'Async' (pricing page renders 'Pricing | Async'; async.com mirrors podcastle.ai/pricing). Tier structure read (Free/Essentials/Pro/Teams/Enterprise, credit-based) but dollar prices JS-rendered. Affiliate: 25% in-house program verified on official page. Dollar prices need a live-browser check.",
+   "verification_status": "partially-verified",
    "weaknesses": [
-    "Paid-tier USD prices not extractable from the official page \u2014 being re-verified"
+    "Paid-tier USD prices not extractable from the official page — being re-verified"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "https://listnr.AI/affiliate-program",
-    "commission": "30% Starter, 35% at 30+ active customers, 40% at 50+ active customers \u2014 recurring across a 12-month commission period",
-    "cookie_days": null,
     "has_program": true,
+    "commission": "Tiered: 30% starter / 35% at 30 active referrals / 40% at 50+ customers — recurring across a 12-month commission period; managed via Tolt; cookie and payout minimum not stated on official page",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "https://listnr.AI/affiliate",
     "status": "verified"
    },
    "category": "ai-voice",
@@ -1402,53 +1561,87 @@
     "Affiliate portal powered by Tolt"
    ],
    "free_plan": false,
-   "free_plan_details": "",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "Free: 1,000 credits one-time grant to start, no credit card",
+   "last_verified": "2026-10-05",
    "name": "Listnr",
-   "pricing_tiers": [],
+   "pricing_tiers": [
+    {
+     "plan": "Free",
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "1,000 credits one-time grant (not a monthly quota), 1,000+ voices preview, 142+ languages/accents, Studio access; no credit card"
+    },
+    {
+     "plan": "Individual",
+     "price_usd": 19,
+     "billing": "monthly",
+     "notes": "$19/mo ($190/yr — 2 months free on yearly); 20,000 credits/mo ~2 hrs voice, 50 GB, 50 videos/mo, unlimited downloads/exports, commercial rights"
+    },
+    {
+     "plan": "Solo",
+     "price_usd": 39,
+     "billing": "monthly",
+     "notes": "$39/mo ($390/yr); 50,000 credits/mo ~5 hrs, 100 GB, 150 videos/mo"
+    },
+    {
+     "plan": "Agency",
+     "price_usd": 99,
+     "billing": "monthly",
+     "notes": "$99/mo ($990/yr); 250,000 credits/mo ~25 hrs, 250 GB, 250 videos/mo"
+    },
+    {
+     "plan": "Custom/Enterprise",
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Custom proposal"
+    }
+   ],
    "source_urls": [
-    "https://listnr.AI/affiliate-program"
+    "https://listnr.tech/pricing",
+    "https://listnr.AI/affiliate"
    ],
    "strengths": [
-    "Tiered 30\u201340% recurring commissions over 12 months; free to join"
+    "Tiered 30–40% recurring commissions over 12 months; free to join"
    ],
    "url": "https://listnr.tech",
-   "verification_notes": "Official affiliate page verified. No official pricing page found \u2014 pricing is being re-verified against the official site. Affiliate sign-up runs through the Tolt portal (listnr.tolt.io).",
-   "verification_status": "unverified",
+   "verification_notes": "2026-10-05: FULLY VERIFIED (was unverified) — Free (1,000 one-time credits) / Individual $19 / Solo $39 / Agency $99 / Custom; yearly = 10 months charged up front. Affiliate tiered 30/35/40% over 12 months re-verified; official affiliate now at listnr.AI (operates on both listnr.tech and listnr.AI).",
+   "verification_status": "verified",
    "weaknesses": [
-    "No official pricing page could be located \u2014 pricing is being re-verified"
+    "No official pricing page could be located — pricing is being re-verified"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "",
+    "has_program": false,
     "commission": "",
     "cookie_days": null,
-    "has_program": false,
     "payout_min": "",
+    "apply_url": "",
     "status": "none-found"
    },
    "category": "ai-voice",
    "features": [],
    "free_plan": false,
    "free_plan_details": "",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Coqui",
    "pricing_tiers": [],
-   "source_urls": [],
+   "source_urls": [
+    "https://coqui.ai"
+   ],
    "strengths": [],
    "url": "https://coqui.ai",
-   "verification_notes": "No official pricing page found on 2026-10-01. All details are being re-verified against the official site.",
+   "verification_notes": "2026-10-05: RED FLAG — coqui.ai no longer belongs to Coqui AI; the domain now serves an Indonesian gambling/slot spam site (UNIKBET) — domain expired, parked, hijacked. Coqui shut down Jan 2024 (founder announcement); only the community fork idiap/coqui-ai-TTS survives (non-commercial, not affiliate-able). Tool kept per no-delete policy but DO NOT link coqui.ai from hub pages (gambling spam). Recommend delisting.",
    "verification_status": "unverified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "https://affiliate.submagic.co",
-    "commission": "30% recurring commission for life of the referred customer",
-    "cookie_days": null,
     "has_program": true,
+    "commission": "30% recurring for life; payouts on the 7th of each month via PayPal; $50 minimum; promo-code sales also tracked; cookie length not stated on official page",
+    "cookie_days": null,
     "payout_min": "$50",
+    "apply_url": "https://www.submagic.co/affiliate",
     "status": "verified"
    },
    "category": "captions-editing",
@@ -1462,50 +1655,56 @@
    ],
    "free_plan": false,
    "free_plan_details": "No free plan shown on the official pricing page; 'no credit card required' trial language present",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Submagic",
    "pricing_tiers": [
     {
-     "billing": "monthly",
-     "notes": "$12/mo billed annually; 45 credits/month = 15 videos; max 2-min videos; 1080p 30fps; no watermark",
      "plan": "Starter",
-     "price_usd": 19
+     "price_usd": 19,
+     "billing": "monthly",
+     "notes": "$19/mo monthly / $12/mo billed annually; 45 credits = 15 videos/mo, 2-min duration, 1080p, no watermark"
     },
     {
-     "billing": "monthly",
-     "notes": "$23/mo billed annually; 120 credits/month = 40 videos; max 5-min videos",
      "plan": "Pro",
-     "price_usd": 39
+     "price_usd": 39,
+     "billing": "monthly",
+     "notes": "$39/mo monthly / $23/mo billed annually; 120 credits = 40 videos/mo, 5-min duration, Storyblocks B-roll, AI zooms/clean audio"
     },
     {
-     "billing": "monthly",
-     "notes": "$41/mo billed annually; 300 credits/month = 100 videos; max 30-min videos; 4K 60fps",
      "plan": "Business",
-     "price_usd": 69
+     "price_usd": 69,
+     "billing": "monthly",
+     "notes": "$69/mo monthly / $41/mo billed annually; 300 credits = 100 videos/mo, 30-min duration, 4K/60fps, brand assets"
+    },
+    {
+     "plan": "Custom",
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Custom quote: custom videos/minutes/members, SSO, dedicated success"
     }
    ],
    "source_urls": [
     "https://submagic.co/pricing",
-    "https://affiliate.submagic.co"
+    "https://www.submagic.co/affiliate"
    ],
    "strengths": [
     "30% recurring lifetime affiliate commission (verified on official affiliate page)",
     "AI captions with auto emojis and magic zoom"
    ],
    "url": "https://submagic.co",
-   "verification_notes": "Official pricing page + official affiliate program page both fetched and read.",
+   "verification_notes": "2026-10-05: verified — Starter $19 ($12 annual) / Pro $39 ($23) / Business $69 ($41) / Custom; credit allowances (45/120/300 = 15/40/100 videos) read on page. Affiliate 30% for life, $50 PayPal min re-verified.",
    "verification_status": "verified",
    "weaknesses": [
-    "No free plan \u2014 paid plans only"
+    "No free plan — paid plans only"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "",
-    "cookie_days": null,
     "has_program": false,
+    "commission": "No affiliate program on official pages — https://www.captions.ai/affiliates returns 404. Third-party directories conflict (20% recurring/12mo vs 25%) and are not used.",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "",
     "status": "none-found"
    },
    "category": "captions-editing",
@@ -1516,7 +1715,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free plan: basic trimming, 1 caption template, no AI credits",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Captions",
    "pricing_tiers": [
     {
@@ -1545,14 +1744,15 @@
     }
    ],
    "source_urls": [
-    "https://www.captions.ai/pricing"
+    "https://captions.ai/pricing",
+    "https://www.captions.ai/affiliates"
    ],
    "strengths": [
     "AI twins/actors on paid plans",
     "Credit rollover (3x) on paid plans"
    ],
    "url": "https://www.captions.ai",
-   "verification_notes": "Official pricing page fetched and read. No affiliate program found on official pages.",
+   "verification_notes": "2026-10-05: verified — unchanged (Free $0 / Max $24.99 / Frontier $69.99); footnote: iOS plans only; unused credits roll over up to 3x monthly allowance. No affiliate program (official /affiliates 404).",
    "verification_status": "verified",
    "weaknesses": []
   },
@@ -1573,29 +1773,31 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: 60 credits/month (1 credit = 1 minute uploaded)",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Vizard",
    "pricing_tiers": [],
    "source_urls": [
-    "https://vizard-corp.getrewardful.com"
+    "https://vizard.ai/pricing",
+    "https://help.vizard.ai/en/articles/8771871-how-to-join-the-affiliate-program",
+    "https://vizard.ai/affiliate"
    ],
    "strengths": [
     "25% recurring affiliate commission (verified via official Rewardful page)"
    ],
    "url": "https://vizard.ai",
-   "verification_notes": "Official pricing page fetched but JS-rendered \u2014 prices not extractable. Official affiliate page (Rewardful) verified. Pricing is being re-verified against the official site.",
+   "verification_notes": "2026-10-05: pricing page JS-gated ($0 rendered for paid tiers) — pricing stays unverified. Affiliate 25% (first 12 payments within 12 months), 60-day cookie, $50 min re-verified exactly.",
    "verification_status": "unverified",
    "weaknesses": [
-    "Pricing page is JS-rendered \u2014 prices not extractable from the official page"
+    "Pricing page is JS-rendered — prices not extractable from the official page"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "https://affiliates.opus.pro/signup",
-    "commission": "25% for up to 12 months (one-time on annual plans)",
-    "cookie_days": null,
     "has_program": true,
-    "payout_min": "",
+    "commission": "25% recurring through the first year of each referred subscriber; paid automatically on the 15th of each month to PayPal; $20 minimum; approval ~1 week; no paid-media ads allowed; cookie length not stated on official page",
+    "cookie_days": null,
+    "payout_min": "$20",
+    "apply_url": "https://www.opus.pro/affiliate",
     "status": "verified"
    },
    "category": "captions-editing",
@@ -1610,54 +1812,54 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: AI clipping, animated captions with watermark, 1080p",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "OpusClip",
    "pricing_tiers": [
     {
-     "billing": "monthly",
-     "notes": "AI clipping; animated captions with watermark; 1080p; 3-day export window",
      "plan": "Free",
-     "price_usd": 0
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "Watermarked captions, 1080p renders, exports expire after 3 days"
     },
     {
-     "billing": "monthly",
-     "notes": "Full editor; virality score; watermark-free; 30-day export window",
      "plan": "Starter",
-     "price_usd": 15
-    },
-    {
+     "price_usd": 15,
      "billing": "monthly",
-     "notes": "Team workspace; B-roll; scheduling; XML export; API",
-     "plan": "Pro",
-     "price_usd": 29
+     "notes": "Virality Score, animated captions, 9:16 output, 1 brand template, 30-day export window"
     },
     {
-     "billing": "custom",
-     "notes": "Contact sales",
+     "plan": "Pro",
+     "price_usd": 29,
+     "billing": "monthly",
+     "notes": "Everything in Starter + 4K, scheduling, 6 social connections, 2-seat workspace, 100GB storage, API, XML export"
+    },
+    {
      "plan": "Business",
-     "price_usd": null
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Customized capacity, seats, API, MSA"
     }
    ],
    "source_urls": [
     "https://www.opus.pro/pricing",
-    "https://affiliates.opus.pro/signup"
+    "https://www.opus.pro/affiliate"
    ],
    "strengths": [
     "25% affiliate commission for up to 12 months",
     "AI virality score differentiator"
    ],
    "url": "https://www.opus.pro",
-   "verification_notes": "Official pricing page + official affiliate page both fetched and read.",
+   "verification_notes": "2026-10-05: verified — Free $0 / Starter $15 / Pro $29 / Business custom; per-minute credit counts not rendered. Brand now 'multi-model AI video platform' with Agent Opus. Affiliate 25% first year, $20 min, 15th-monthly PayPal re-verified.",
    "verification_status": "verified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "https://riverside.getrewardful.com",
-    "commission": "Rates in affiliate dashboard (not publicly listed)",
-    "cookie_days": null,
     "has_program": true,
+    "commission": "Program exists (tracked via Rewardful or Impact; applications reviewed for brand fit; contact affiliates@riverside.com). Commission rate, cookie length, and payout minimum are NOT publicly disclosed — detailed in affiliate dashboard or separate agreement.",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "https://riverside.getrewardful.com/terms",
     "status": "verified"
    },
    "category": "video-editor",
@@ -1669,8 +1871,8 @@
     "Separate audio/video tracks"
    ],
    "free_plan": true,
-   "free_plan_details": "Free tier available",
-   "last_verified": "2026-10-01",
+   "free_plan_details": "Free-plan status AMBIGUOUS on 2026-10-05: a third-party review claims Riverside's own Sep 10, 2026 article says the free plan was replaced by 14-day trials, but the official pricing FAQ still reads as listing free-plan-like structure — NOT confirmed from official pages. Verify the live signup flow before publishing.",
+   "last_verified": "2026-10-05",
    "name": "Riverside",
    "pricing_tiers": [
     {
@@ -1706,24 +1908,24 @@
    ],
    "source_urls": [
     "https://riverside.fm/pricing",
-    "https://riverside.getrewardful.com"
+    "https://riverside.getrewardful.com/terms"
    ],
    "strengths": [
     "Studio-quality remote recording with separate tracks",
     "Affiliate program confirmed via official Rewardful page"
    ],
    "url": "https://riverside.fm",
-   "verification_notes": "Official pricing page + official affiliate page both fetched and read. Commission rates live in the affiliate dashboard, not publicly.",
-   "verification_status": "verified",
+   "verification_notes": "2026-10-05: plan names/prices read via official FAQ (Pro $29→$24 annual / Grow $39→$34 / Webinar $99→$79 / Business) but plan cards JS-gated → partially-verified. Free-plan status AMBIGUOUS (third-party claims Sep 2026 article replaced free plan with trials — not confirmed from official pages). Affiliate program exists; terms undisclosed publicly.",
+   "verification_status": "partially-verified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "https://www.descript.com/affiliate",
-    "commission": "$25 flat one-time payment per new subscription (no renewals; $100k annual cap)",
-    "cookie_days": null,
     "has_program": true,
+    "commission": "$25 flat one-time payment per new qualifying subscription (Creator/Pro eligible products); 30-day cookie; initial term only, no renewals; via PartnerStack; $100,000/yr per-affiliate cap (official affiliate terms, last updated Feb 28, 2024)",
+    "cookie_days": 30,
     "payout_min": "",
+    "apply_url": "https://www.descript.com/affiliate-terms",
     "status": "verified"
    },
    "category": "video-editor",
@@ -1736,30 +1938,63 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: 60 media min/month, 100 one-time AI credits",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Descript",
-   "pricing_tiers": [],
+   "pricing_tiers": [
+    {
+     "plan": "Free",
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "60 media min/mo, 100 one-time AI credits, 720p watermarked exports"
+    },
+    {
+     "plan": "Hobbyist",
+     "price_usd": null,
+     "billing": "monthly",
+     "notes": "Per person/mo (dollar price JS-gated, not extractable); 10 media hrs/mo, 400 AI credits, 1080p watermark-free"
+    },
+    {
+     "plan": "Creator",
+     "price_usd": null,
+     "billing": "monthly",
+     "notes": "Per person/mo (dollar price JS-gated); 30 media hrs/mo, 800 AI credits, 4K, full Underlord AI suite"
+    },
+    {
+     "plan": "Business",
+     "price_usd": null,
+     "billing": "monthly",
+     "notes": "Per person/mo (dollar price JS-gated); 40 media hrs/mo, 1500 AI credits, Brand Studio, translate/dub 30+ languages"
+    },
+    {
+     "plan": "Enterprise",
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Contact sales"
+    }
+   ],
    "source_urls": [
-    "https://www.descript.com/affiliate"
+    "https://www.descript.com/pricing",
+    "https://www.descript.com/affiliate",
+    "https://www.descript.com/affiliate-terms"
    ],
    "strengths": [
     "Pioneering text-based video editing",
     "$25 flat affiliate payout per new subscription"
    ],
    "url": "https://www.descript.com",
-   "verification_notes": "Official pricing page fetched but JS-rendered \u2014 prices not extractable. Official affiliate page verified. Pricing is being re-verified against the official site.",
-   "verification_status": "unverified",
+   "verification_notes": "2026-10-05: plan structure, media hours, and AI credits read on official page (only dollar figures JS-gated) → partially-verified. Annual saves up to 35%. Affiliate $25 flat/30-day cookie re-verified on official terms (Feb 2024).",
+   "verification_status": "partially-verified",
    "weaknesses": [
-    "Pricing page is JS-rendered \u2014 prices not extractable from the official page"
+    "Pricing page is JS-rendered — prices not extractable from the official page"
    ]
   },
   {
    "affiliate": {
-    "apply_url": "https://flixier.com/affiliate-program",
-    "commission": "50% of monthly plans / 25% of annual plans per paying customer",
-    "cookie_days": null,
     "has_program": true,
+    "commission": "50% commission on monthly plans / 25% on annual plans; 120-day cookie; payouts monthly; managed via FirstPromoter; payout threshold not stated on official page",
+    "cookie_days": 120,
     "payout_min": "",
+    "apply_url": "https://flixier.com/affiliate-program",
     "status": "verified"
    },
    "category": "video-editor",
@@ -1771,7 +2006,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: 10 min export/month, 720p with watermark, 500 AI credits",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Flixier",
    "pricing_tiers": [
     {
@@ -1800,7 +2035,7 @@
     }
    ],
    "source_urls": [
-    "https://flixier.com/pricing",
+    "https://flixier.com/help/pricing-plans-explained",
     "https://flixier.com/affiliate-program"
    ],
    "strengths": [
@@ -1808,17 +2043,17 @@
     "Cloud rendering speeds up exports"
    ],
    "url": "https://flixier.com",
-   "verification_notes": "Official pricing page + official affiliate page both fetched and read. Per-seat pricing.",
+   "verification_notes": "2026-10-05: verified — Free $0 / Starter $19 / Creator $39 / Business $69; yearly saves up to 56%. Affiliate 50%/25% re-verified; 120-day cookie.",
    "verification_status": "verified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "",
-    "commission": "",
-    "cookie_days": null,
     "has_program": false,
+    "commission": "No affiliate program page, terms, or signup on official pages (wisecut.video or wisecut.ai). Third-party claims are stale/conflicting (15% via Impact, 938+ days old) and not used.",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "",
     "status": "none-found"
    },
    "category": "video-editor",
@@ -1830,7 +2065,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: 30 min/month, 480p, 3-min exports, no watermark",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Wisecut",
    "pricing_tiers": [
     {
@@ -1853,24 +2088,25 @@
     }
    ],
    "source_urls": [
-    "https://www.wisecut.video/pricing"
+    "https://wisecut.ai/pricing",
+    "https://www.wisecut.video/"
    ],
    "strengths": [
     "Free plan has no watermark",
     "AI silence removal and smart scenes"
    ],
    "url": "https://www.wisecut.video",
-   "verification_notes": "Official pricing page fetched and read. No affiliate program found on official pages.",
+   "verification_notes": "2026-10-05: verified — Free $0 / Starter+ $23.25/mo annual ($279/yr) / Professional+ $83.25/mo annual ($999/yr); credit system (300/1,200 credits/mo); annual saves up to 30%; monthly equivalents not shown. No affiliate program on official pages.",
    "verification_status": "verified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "https://affiliates.gling.ai/",
-    "commission": "20% of subscription fee for the first 12 months",
-    "cookie_days": null,
     "has_program": true,
+    "commission": "20% commission on all payments within the first 12 months; tracked via Rewardful; payouts monthly via Wise; $100 minimum payment threshold (rolls over); cookie length not stated on official pages",
+    "cookie_days": null,
     "payout_min": "$100",
+    "apply_url": "https://affiliates.gling.ai/signup",
     "status": "verified"
    },
    "category": "video-editor",
@@ -1882,7 +2118,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: 1 hour AI-edited media/month, unlimited watermarked exports",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Gling",
    "pricing_tiers": [
     {
@@ -1912,24 +2148,24 @@
    ],
    "source_urls": [
     "https://gling.ai/pricing",
-    "https://affiliates.gling.ai/"
+    "https://affiliates.gling.ai/signup"
    ],
    "strengths": [
     "20% affiliate commission (verified on official page)",
     "AI bad-take removal saves editing hours"
    ],
    "url": "https://gling.ai",
-   "verification_notes": "Official pricing page + official affiliate page both fetched and read.",
+   "verification_notes": "2026-10-05: verified — Free $0 / Plus $20 ($10 annual) / Pro $40 ($20) / Elite $100 ($50). Affiliate 20%/12mo, $100 Wise min re-verified.",
    "verification_status": "verified",
    "weaknesses": []
   },
   {
    "affiliate": {
-    "apply_url": "https://www.timebolt.io/affiliate-sign-up",
-    "commission": "20% of the first payment (Partner Creator: 20% including renewals)",
-    "cookie_days": null,
     "has_program": true,
+    "commission": "Standard: 20% of the first payment (annual and lifetime pay full commission up front in one transaction); Partner Creator: 20% on every payment including renewals for as long as the customer stays (entry: 20k+ YouTube subs OR 20 paying customers referred); payouts via PayPal on the 15th of each month via ThriveCart; affiliates must be paid customers; cookie not stated. (Note: an older official blog post describes 10% + 5% coupon — the current affiliate-zone page (20%) is treated as current.)",
+    "cookie_days": null,
     "payout_min": "",
+    "apply_url": "https://www.timebolt.io/affiliate-zone",
     "status": "verified"
    },
    "category": "video-editor",
@@ -1940,7 +2176,7 @@
    ],
    "free_plan": true,
    "free_plan_details": "Free: video-only silence removal, watermarked",
-   "last_verified": "2026-10-01",
+   "last_verified": "2026-10-05",
    "name": "Timebolt",
    "pricing_tiers": [
     {
@@ -1957,7 +2193,7 @@
     },
     {
      "billing": "annual",
-     "notes": "$97/year \u2014 same Pro features",
+     "notes": "$97/year — same Pro features",
      "plan": "Pro (Annual)",
      "price_usd": 97
     },
@@ -1982,19 +2218,19 @@
    ],
    "source_urls": [
     "https://www.timebolt.io/pricing",
-    "https://www.timebolt.io/affiliate-sign-up"
+    "https://www.timebolt.io/affiliate-zone"
    ],
    "strengths": [
     "Lifetime plan option ($347 one-time)",
     "20% affiliate commission (verified on official page)"
    ],
    "url": "https://www.timebolt.io",
-   "verification_notes": "Official pricing page + official affiliate page both fetched and read. Note: affiliates must be paid customers.",
+   "verification_notes": "2026-10-05: verified — Free $0 / Pro $17/mo ($97/yr, $347 lifetime) / Teams $97/seat/yr / Vault custom; UMCHECK $0.03/min pay-per-use. Affiliate: current official page says 20% (older blog says 10% — current page used).",
    "verification_status": "verified",
    "weaknesses": [
     "Affiliate program requires being a paid customer"
    ]
   }
  ],
- "verified_on": "2026-10-01"
+ "verified_on": "2026-10-05"
 }
