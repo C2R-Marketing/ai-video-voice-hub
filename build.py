@@ -44,6 +44,12 @@ def starting_price(t):
 def cta_for(name):
     """Return (url, label, note). Only verified affiliate URLs from affiliate-links.json."""
     t = TOOLS[name]
+    # Service-status overrides: confirmed-dead or unreachable domains get no
+    # outbound link at all — a dead "Visit" button is worse than no button.
+    if name == "PlayHT":
+        return (None, "PlayHT",
+                "Status uncertain — play.ht is currently unreachable and third-party reports "
+                "suggest the service was discontinued (PlayAI/Meta). Link removed until confirmed live.")
     entry = aff_links.get(name)
     if entry and entry.get("url") and entry.get("status") == "verified":
         return entry["url"], f"Try {name}", "Affiliate link — we may earn a commission."
@@ -161,6 +167,13 @@ def ul_or(items, fallback):
 def tool_card(name, rank, take):
     t = TOOLS[name]
     url, label, note = cta_for(name)
+    if url:
+        cta_button = (f'<a class="btn" href="{esc(url)}" '
+                      f'rel="{"sponsored noopener" if "affiliate" in note.lower() else "noopener"}" '
+                      f'target="_blank">{esc(label)}</a>')
+    else:
+        # No outbound link (e.g. dead domain) — show the status note instead of a button.
+        cta_button = '<span class="btn btn-disabled" aria-disabled="true">Link unavailable</span>'
     feats = ul_or((t.get("features") or [])[:6],
                   "Feature details are being re-verified against the official site.")
     pros = ul_or((t.get("strengths") or [])[:4],
@@ -194,7 +207,7 @@ Tov is filming a real walkthrough of {esc(name)}: account setup, first project, 
 {free_line}
 </div>
 <div class="cta-row">
-<a class="btn" href="{esc(url)}" rel="{"sponsored noopener" if 'affiliate' in note.lower() else "noopener"}" target="_blank">{esc(label)}</a>
+{cta_button}
 <span class="aff-note">{esc(note)}</span>
 </div>
 </section>"""
@@ -284,20 +297,19 @@ PAGES = [
   ]),
  dict(
   slug="elevenlabs-alternatives", benchmark="ElevenLabs",
-  title="8 Best ElevenLabs Alternatives (2026) — AI Voice Compared",
-  meta="The 8 best ElevenLabs alternatives for AI voiceovers in 2026: Murf, PlayHT, Speechify and more, compared on price and voice quality. Pricing verified.",
-  h1="8 Best ElevenLabs Alternatives in 2026",
-  lede="ElevenLabs sets the bar for realistic AI voices — but per-character pricing adds up, and its free tier is small. These eight alternatives compete on price, languages, and licensing, verified October 5, 2026.",
+  title="7 Best ElevenLabs Alternatives (2026) — AI Voice Compared",
+  meta="The 7 best ElevenLabs alternatives for AI voiceovers in 2026: Murf, Speechify, Lovo and more, compared on price and voice quality. Pricing verified.",
+  h1="7 Best ElevenLabs Alternatives in 2026",
+  lede="ElevenLabs sets the bar for realistic AI voices — but per-character pricing adds up, and its free tier is small. These seven alternatives compete on price, languages, and licensing, verified October 5, 2026.",
   intro=("AI voiceover is the backbone of faceless YouTube channels, audiobooks, and course narration. ElevenLabs earned its reputation with "
          "remarkably human voices, but its pricing model charges by character — long scripts get expensive. The alternatives below include "
          "subscription models with generous minutes, stronger commercial licenses, and better free tiers. Every price was verified against the official site."),
-  tools=["ElevenLabs","Murf","PlayHT","Speechify","Resemble AI","WellSaid Labs","Lovo","Podcastle","Listnr"],
+  tools=["ElevenLabs","Murf","PlayHT","Speechify","WellSaid Labs","Lovo","Podcastle","Listnr"],
   takes={
    "ElevenLabs": "The benchmark: the most natural-sounding voices and the best voice cloning, but character-based pricing punishes long scripts.",
    "Murf": "The studio pick — a polished voiceover workflow with team collaboration, aimed squarely at professional video producers.",
-   "PlayHT": "A strong all-rounder with competitive pricing and a large voice library; worth a head-to-head listen against ElevenLabs.",
+   "PlayHT": "Status uncertain as of October 2026 — play.ht is currently unreachable and third-party reports suggest the service was discontinued. Listed for completeness; do not rely on old pricing.",
    "Speechify": "Famous for text-to-speech reading, with a voiceover studio for creators; a good fit if you already live in their ecosystem.",
-   "Resemble AI": "The customization king — deep voice cloning controls for developers and studios that need exact voice matches.",
    "WellSaid Labs": "Enterprise-grade narration voices with a focus on consistent, broadcast-quality output for training and corporate content.",
    "Lovo": "Genny pairs AI voices with AI art and video; a creative-suite play for YouTubers who want voice plus visuals in one subscription.",
    "Podcastle": "Built for podcasters — recording, editing, and AI voices in one place, so your narration never leaves the studio.",
@@ -307,7 +319,7 @@ PAGES = [
    ("What is the cheapest ElevenLabs alternative?",
     "<p>Listnr and Podcastle compete on the low end with generous entry tiers. Compare the per-month character or minute allowances in the pricing boxes above — the cheapest sticker price isn't always the cheapest per finished minute of audio.</p>"),
    ("Which AI voice sounds most human?",
-    "<p>ElevenLabs still leads in blind-listening reputation, with PlayHT and Murf close behind. Voice quality is subjective — every tool above offers free samples, so listen before you pay.</p>"),
+    "<p>ElevenLabs still leads in blind-listening reputation, with Murf close behind. Voice quality is subjective — every tool above offers free samples, so listen before you pay.</p>"),
    ("Can I use AI voices for commercial YouTube videos?",
     "<p>Yes, on paid plans — but license terms differ by tool. Verify commercial-use rights on the official terms page of whichever tool you choose; free tiers often restrict commercial use.</p>"),
    ("How is AI voice priced — per character or per minute?",
@@ -332,7 +344,7 @@ PAGES = [
    "DeepBrain AI": "A premium realism option aimed at broadcast and corporate communications teams.",
    "Hour One": "Virtual presenters tuned for e-learning and customer education use cases.",
    "Tavus": "One-to-one personalized video at scale — a different category, but the most interesting alternative if your goal is outreach.",
-   "Synthesys": "A full AI media suite (video, voice, avatars) for creators who want one subscription covering every asset.",
+   "Synthesys": "Pivoted in 2026 to an AI video agent for ad creation (UGC ads, commercials, faceless stories) — no longer the classic avatar-presenter tool. Evaluate it as ad-creative software; pricing verified on the official site.",
   },
   faqs=[
    ("Is there a free Synthesia alternative?",
@@ -377,15 +389,18 @@ PAGES = [
   title="ElevenLabs vs Murf vs PlayHT (2026) — AI Voice Head-to-Head",
   meta="ElevenLabs vs Murf vs PlayHT compared head-to-head in 2026: voice quality, pricing, languages, and commercial licenses. Pricing verified.",
   h1="ElevenLabs vs Murf vs PlayHT: Head-to-Head in 2026",
-  lede="The three biggest names in AI voiceover, compared on the four things that decide a purchase: how the voices sound, what it costs per finished minute, language coverage, and license terms. Verified October 5, 2026.",
-  intro=("If you've narrowed your AI voice search to these three, you're choosing between philosophies. ElevenLabs bets on raw voice realism and charges per character. "
-         "Murf bets on a professional voiceover studio workflow with collaboration. PlayHT bets on breadth — a huge voice library at competitive prices. "
+  lede="ElevenLabs vs Murf vs PlayHT compared head-to-head — with an important status note on PlayHT below. Verified October 5, 2026.",
+  intro=("⚠️ <strong>Status note (October 5, 2026):</strong> play.ht is currently unreachable, and third-party reports suggest the PlayHT service was "
+         "discontinued following the PlayAI/Meta acquisition. We have removed the outbound PlayHT link until the service's status is confirmed — "
+         "treat any PlayHT pricing you find online as stale. The ElevenLabs vs Murf comparison below is unaffected.<br><br>"
+         "If you've narrowed your AI voice search to these names, you're choosing between philosophies. ElevenLabs bets on raw voice realism and charges per character. "
+         "Murf bets on a professional voiceover studio workflow with collaboration. PlayHT bet on breadth — a huge voice library at competitive prices. "
          "Below is the honest breakdown, then a per-tool deep dive so you can hear the differences yourself with each tool's free samples."),
   tools=["ElevenLabs","Murf","PlayHT"],
   takes={
    "ElevenLabs": "Wins on pure realism and voice cloning quality. Loses on pricing for long scripts — character-based billing adds up fast at audiobook or course scale.",
    "Murf": "Wins on workflow — the closest thing to a real recording studio, with team features video producers actually use. Loses on per-minute value for solo creators doing high volume.",
-   "PlayHT": "Wins on value breadth — big library, competitive plans, strong API. The pragmatic middle ground if ElevenLabs feels pricey and Murf feels corporate.",
+   "PlayHT": "Status uncertain as of October 2026 — play.ht is unreachable and the service may be discontinued. Previously won on value breadth; do not make a buying decision on old pricing.",
   },
   faqs=[
    ("Which sounds most human: ElevenLabs, Murf, or PlayHT?",
@@ -420,7 +435,7 @@ PAGES = [
    ("What is the best free Descript alternative?",
     "<p>Kapwing and VEED have the most generous free tiers among full editors; Gling and Timebolt offer free trials of their cleanup tools. Free plans are watermarked or time-limited — fine for evaluation.</p>"),
    ("Which alternative has voice cloning like Overdub?",
-    "<p>Descript's Overdub remains the most integrated cloning-for-editing feature. Podcastle and Resemble AI offer strong standalone cloning if that's your priority.</p>"),
+    "<p>Descript's Overdub remains the most integrated cloning-for-editing feature. Podcastle offers strong standalone voice cloning if that's your priority.</p>"),
    ("Is text-based editing actually faster?",
     "<p>For talking-head and podcast content, yes — cutting filler words from a transcript beats scrubbing a timeline. For cinematic or heavily visual editing, traditional timelines still win.</p>"),
   ]),
