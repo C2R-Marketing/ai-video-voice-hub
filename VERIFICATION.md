@@ -3,7 +3,7 @@
 **Dataset verified on:** 2026-10-05  
 **Method:** each tool's pricing and affiliate terms were checked against its official pages only (pricing page + affiliate/partner page). Third-party figures were never entered as verified facts — anything unconfirmed is marked unverified and the page shows a "re-verifying" notice instead of a number.
 
-**Status counts:** verified: 22, partially-verified: 9, unverified: 9
+**Status counts:** verified: 23, partially-verified: 9, unverified: 8
 **Affiliate counts:** verified: 26, none-found: 11, unverified: 3
 
 ## Per-tool record
@@ -332,8 +332,8 @@
 
 ## Run: 2026-10-05 (weekly re-verification)
 All 40 tools re-checked against official pages only (pricing page + affiliate/partner page). Third-party directories were never a source of truth. Figures below were read on an official page **this run** unless noted as carried.
-**Pricing status counts:** verified: 22, partially-verified: 9, unverified: 9
-**Affiliate status counts:** verified: 26, none-found: 11, unverified: 3
+**Pricing status counts:** verified: 23, partially-verified: 9, unverified: 8
+**Affiliate status counts:** verified: 27, none-found: 11, unverified: 2
 
 ### Pictory
 - Category: `ai-video-generator` · Pricing status: **partially-verified** · Last verified: 2026-10-05
@@ -495,13 +495,14 @@ All 40 tools re-checked against official pages only (pricing page + affiliate/pa
 - Affiliate: unknown — No current affiliate page on official site — only a stale ~2023 official blog mention (40% lifetime recurring, $100 threshold via Paykickstart); treat as unverified. (affiliate page status: unverified)
 - Notes: 2026-10-05: verified — Starter $29 ($20 annual) / Pro $59 ($41) / Agency $119 ($83) / Max $199 ($139) / credit packs. PIVOT: now an 'AI Video Agent' for ad creation (UGC ads, TV commercials, faceless stories) — not a classic avatar/presenter tool; hub copy is stale. No current affiliate page on official site (stale ~2023 blog mention unverified).
 
+
 ### ElevenLabs
-- Category: `ai-voice` · Pricing status: **unverified** · Last verified: 2026-10-05
+- Category: `ai-voice` · Pricing status: **verified** · Last verified: 2026-10-05
 - Site: https://elevenlabs.io
-- Official sources read: none — page unreadable
-- Plans: — (not verified)
-- Affiliate: YES — Official affiliate page exists at elevenlabs.io/affiliates but the whole domain was policy-blocked in this environment on 2026-10-05 — no commission rate, cookie, or payout verified against an official page. Third-party 22%/90-day claims not used. (affiliate page status: unverified)
-- Notes: 2026-10-05: whole elevenlabs.io domain policy-blocked in this environment — no official page readable. Pricing and affiliate stay unverified. Live-browser check spawned 2026-10-05 (pending).
+- Official sources read: https://elevenlabs.io/pricing, https://elevenlabs.io/pricing?price.billing_cycle=yearly#pricing-table, https://elevenlabs.io/affiliates
+- Plans: Free: $0 (monthly), Starter: $6 (monthly), Creator: $22 (monthly), Pro: $99 (monthly), Scale: $299 (monthly), Business: $990 (monthly), Enterprise: custom (custom)
+- Affiliate: YES — Up to 22% commission on every paying customer — recurring on ALL payments for the first 12 months of new paid subscriber plans (no limits); covers ElevenAgents, ElevenCreative, and ElevenAPI. Cookie/attribution window, payout minimum, and payout method not stated on official page (PartnerStack mentioned). (affiliate page status: verified)
+- Notes: 2026-10-05: FULLY VERIFIED via live-browser check on official pages (text fetches were policy-blocked). Pricing page + yearly variant read: Free $0 (10k credits) / Starter $6 ($5 annual) / Creator $22 ($18.33) / Pro $99 ($82.50) / Scale $299 ($249.17) / Business $990 ($825) / Enterprise custom; annual = pay 10 months (2 months free); prices exclude taxes. Time-limited promos observed (3x credits on Creator+ until Oct 12; 83% off first Starter month / 50% off Creator until Oct 18) — promos not core pricing. Affiliate: up to 22%, recurring 12 months, no limits; cookie/payout min/method not stated on official page.
 
 ### Murf
 - Category: `ai-voice` · Pricing status: **partially-verified** · Last verified: 2026-10-05

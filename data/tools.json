@@ -1128,24 +1128,71 @@
   {
    "affiliate": {
     "has_program": true,
-    "commission": "Official affiliate page exists at elevenlabs.io/affiliates but the whole domain was policy-blocked in this environment on 2026-10-05 — no commission rate, cookie, or payout verified against an official page. Third-party 22%/90-day claims not used.",
+    "commission": "Up to 22% commission on every paying customer — recurring on ALL payments for the first 12 months of new paid subscriber plans (no limits); covers ElevenAgents, ElevenCreative, and ElevenAPI. Cookie/attribution window, payout minimum, and payout method not stated on official page (PartnerStack mentioned).",
     "cookie_days": null,
     "payout_min": "",
     "apply_url": "https://elevenlabs.io/affiliates",
-    "status": "unverified"
+    "status": "verified"
    },
    "category": "ai-voice",
    "features": [],
    "free_plan": false,
-   "free_plan_details": "",
+   "free_plan_details": "Free: $0/month, 10k credits, permanent free tier",
    "last_verified": "2026-10-05",
    "name": "ElevenLabs",
-   "pricing_tiers": [],
-   "source_urls": [],
+   "pricing_tiers": [
+    {
+     "plan": "Free",
+     "price_usd": 0,
+     "billing": "monthly",
+     "notes": "10k credits; Text to Speech, Speech to Text, Sound Effects, Voice Design, Music, Productions, Image, 3 Studio projects; permanent free tier"
+    },
+    {
+     "plan": "Starter",
+     "price_usd": 6,
+     "billing": "monthly",
+     "notes": "$5/mo billed annually (annual = pay 10 months, 2 months free); 30k credits; Commercial License, Instant Voice Cloning, 20 Studio projects, Dubbing Studio"
+    },
+    {
+     "plan": "Creator",
+     "price_usd": 22,
+     "billing": "monthly",
+     "notes": "$18.33/mo billed annually; 121k credits; Professional Voice Cloning, Additional Credits (marked Popular)"
+    },
+    {
+     "plan": "Pro",
+     "price_usd": 99,
+     "billing": "monthly",
+     "notes": "$82.50/mo billed annually; 600k credits; 44.1kHz PCM audio output via API, 192kbps quality audio"
+    },
+    {
+     "plan": "Scale",
+     "price_usd": 299,
+     "billing": "monthly",
+     "notes": "$249.17/mo billed annually; 1.8M credits; 3 Workspace seats, Team Collaboration, 3 Professional Voice Clones"
+    },
+    {
+     "plan": "Business",
+     "price_usd": 990,
+     "billing": "monthly",
+     "notes": "$825/mo billed annually; 6M credits; Low-latency TTS from 5c/min, 10 Professional Voice Clones, 10 Workspace seats"
+    },
+    {
+     "plan": "Enterprise",
+     "price_usd": null,
+     "billing": "custom",
+     "notes": "Contact sales"
+    }
+   ],
+   "source_urls": [
+    "https://elevenlabs.io/pricing",
+    "https://elevenlabs.io/pricing?price.billing_cycle=yearly#pricing-table",
+    "https://elevenlabs.io/affiliates"
+   ],
    "strengths": [],
    "url": "https://elevenlabs.io",
-   "verification_notes": "2026-10-05: whole elevenlabs.io domain policy-blocked in this environment — no official page readable. Pricing and affiliate stay unverified. Live-browser check spawned 2026-10-05 (pending).",
-   "verification_status": "unverified",
+   "verification_notes": "2026-10-05: FULLY VERIFIED via live-browser check on official pages (text fetches were policy-blocked). Pricing page + yearly variant read: Free $0 (10k credits) / Starter $6 ($5 annual) / Creator $22 ($18.33) / Pro $99 ($82.50) / Scale $299 ($249.17) / Business $990 ($825) / Enterprise custom; annual = pay 10 months (2 months free); prices exclude taxes. Time-limited promos observed (3x credits on Creator+ until Oct 12; 83% off first Starter month / 50% off Creator until Oct 18) — promos not core pricing. Affiliate: up to 22%, recurring 12 months, no limits; cookie/payout min/method not stated on official page.",
+   "verification_status": "verified",
    "weaknesses": []
   },
   {
